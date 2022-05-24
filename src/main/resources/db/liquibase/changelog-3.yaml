@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: Viktor_Khokhliuk
+      changes:
+        - createTable:
+            tableName: report
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              - column:
+                  name: title
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date
+                  type: DATE
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: info
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: client_id
+                  type: BIGINT
+
+
+        - addForeignKeyConstraint:
+            baseColumnNames: client_id
+            baseTableName: report
+            constraintName: fk_clientId
+            referencedColumnNames: id
+            referencedTableName: client

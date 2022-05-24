@@ -1,0 +1,63 @@
+package org.project.spring.tax_office.logic.controller.user;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.project.spring.tax_office.infra.web.QueryParameterResolver;
+import org.project.spring.tax_office.logic.entity.dto.UserLoginDto;
+import org.project.spring.tax_office.logic.entity.user.User;
+import org.project.spring.tax_office.logic.entity.user.UserRole;
+import org.project.spring.tax_office.logic.service.UserService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.Locale;
+import java.util.Map;
+@Log4j2
+@Controller
+@RequiredArgsConstructor
+public class UserController {
+
+    private final Map<UserRole, String> views;
+    private final UserService userService;
+    private final QueryParameterResolver queryParameterResolver;
+
+    @PostMapping("/login")
+    public RedirectView login(HttpServletRequest request) {
+        UserLoginDto userLoginDto = queryParameterResolver.getObject(request, UserLoginDto.class);
+        User registeredUser = userService.getUserByLogin(userLoginDto);
+        HttpSession session = request.getSession(true);
+        session.setAttribute("user", registeredUser);
+        return new RedirectView(views.get(registeredUser.getUserRole()));
+    }
+
+    @PostMapping("/logout")
+    public RedirectView logout(HttpServletRequest request) {
+        HttpSession session = request.getSession(false);
+        if (session != null)
+            session.invalidate();
+
+        return new RedirectView("/tax-office/index.jsp");
+    }
+
+    @PostMapping("/changeLocale")
+    public RedirectView changeLocale(HttpServletRequest request) {
+        String selectedLocale = request.getParameter("selectedLocale");
+        String view = request.getParameter("view");
+        Locale locale = new Locale(selectedLocale);
+        HttpSession session = request.getSession(false);
+        session.setAttribute("selectedLocale", locale);
+        log.info("Set session selected locale --> " + selectedLocale);
+        return new RedirectView("/tax-office/" + view);
+    }
+
+    @GetMapping("/home")
+    public ModelAndView toHome(HttpServletRequest request) {
+        User user = (User) request.getSession(false).getAttribute("user");
+        return new ModelAndView(views.get(user.getUserRole()));
+    }
+}

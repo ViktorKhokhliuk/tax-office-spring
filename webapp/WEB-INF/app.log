@@ -1,0 +1,250 @@
+2022-05-20 14:53:40,963 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 14:53:42,550 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1584 ms
+2022-05-20 14:53:42,566 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 14:53:42,569 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 3 ms
+2022-05-20 14:54:12,791 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /tax-office/
+2022-05-20 14:54:54,878 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-3] No mapping for GET /tax-office/
+2022-05-20 15:08:28,902 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 15:08:30,167 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1261 ms
+2022-05-20 15:08:30,180 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 15:08:30,183 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 3 ms
+2022-05-20 15:08:40,423 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /tax-office/
+2022-05-20 15:09:44,316 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 15:09:45,588 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1268 ms
+2022-05-20 15:09:45,601 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 15:09:45,604 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 3 ms
+2022-05-20 15:09:53,341 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-20 15:09:53,342 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-20 15:09:53,342 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-20 15:13:18,948 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 15:13:20,375 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1421 ms
+2022-05-20 15:13:20,388 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 15:13:20,391 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2022-05-20 15:13:25,162 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-20 15:13:25,163 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-20 15:13:36,167 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-20 15:16:56,265 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 15:16:57,874 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1605 ms
+2022-05-20 15:16:57,889 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 15:16:57,892 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 3 ms
+2022-05-20 15:18:18,438 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 15:18:20,060 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1619 ms
+2022-05-20 15:18:20,074 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 15:18:20,078 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 4 ms
+2022-05-20 15:18:23,339 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-20 15:18:23,340 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-20 15:19:13,209 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-20 20:31:13,482 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-20 20:31:16,780 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3298 ms
+2022-05-20 20:31:16,796 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-20 20:31:16,812 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-20 20:31:55,255 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-20 20:31:55,255 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-20 20:31:55,255 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 13:31:33,984 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:31:34,722 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [D:\Projects\tax-office-spring\target\classes\org\project\spring\tax_office\logic\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.project.spring.tax_office.logic.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-23 13:31:34,737 ERROR o.s.w.c.ContextLoader [main] Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [D:\Projects\tax-office-spring\target\classes\org\project\spring\tax_office\logic\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.project.spring.tax_office.logic.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.Application.main(Application.java:18) [classes/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.project.spring.tax_office.logic.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 40 more
+2022-05-23 13:32:34,630 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:32:37,891 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3246 ms
+2022-05-23 13:32:37,923 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:32:37,923 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 13:32:51,528 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 13:32:51,528 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 13:32:51,528 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 13:35:31,155 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:35:34,139 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 2969 ms
+2022-05-23 13:35:34,170 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:35:34,186 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 13:35:39,590 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 13:35:39,605 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 13:35:39,605 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 13:36:42,766 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:36:45,762 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 2996 ms
+2022-05-23 13:36:45,793 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:36:45,793 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 13:36:51,313 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-23 13:36:51,313 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-23 13:36:51,313 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 13:36:56,399 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-3] No mapping for POST /tax-office/service/login
+2022-05-23 13:40:14,550 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:40:18,184 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3634 ms
+2022-05-23 13:40:18,204 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:40:18,220 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 13:40:41,384 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2022-05-23 13:40:41,392 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2022-05-23 13:40:52,109 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2022-05-23 13:41:42,834 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:41:45,875 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3041 ms
+2022-05-23 13:41:45,906 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:41:45,906 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 13:41:50,455 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 13:41:50,455 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 13:41:50,455 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 13:43:10,664 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:43:14,327 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3647 ms
+2022-05-23 13:43:14,359 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:43:14,359 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 13:43:47,218 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-23 13:43:47,218 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-23 13:43:47,226 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 13:46:24,313 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:46:26,400 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:46:27,844 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3515 ms
+2022-05-23 13:46:27,891 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:46:27,891 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 13:46:30,256 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3840 ms
+2022-05-23 13:46:30,288 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:46:30,312 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 24 ms
+2022-05-23 13:46:41,389 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:46:44,794 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3390 ms
+2022-05-23 13:46:44,825 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:46:44,825 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 13:46:57,106 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 13:46:57,106 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 13:46:57,106 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 13:48:34,636 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:48:37,742 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3106 ms
+2022-05-23 13:48:37,774 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:48:37,790 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 13:49:07,501 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-23 13:49:07,501 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-23 13:49:07,501 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 13:49:11,032 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-4] No mapping for GET /tax-office/service/tax-office/inspector/homePage.jsp
+2022-05-23 13:55:14,943 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 13:55:18,197 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3245 ms
+2022-05-23 13:55:18,225 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 13:55:18,231 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-05-23 13:55:39,477 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 13:55:39,477 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 13:55:39,477 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 20:47:06,426 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 20:47:09,743 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3302 ms
+2022-05-23 20:47:09,774 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 20:47:09,790 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 20:47:19,279 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 20:47:19,279 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 20:47:19,279 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 20:50:00,695 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 20:50:04,034 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3323 ms
+2022-05-23 20:50:04,065 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 20:50:04,080 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-05-23 20:50:10,313 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 20:50:10,313 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 20:50:10,313 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 20:57:51,312 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 20:57:55,011 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3699 ms
+2022-05-23 20:57:55,043 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 20:57:55,043 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 20:58:15,144 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 20:58:15,144 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 20:58:15,144 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 20:58:43,405 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-3] Client: tony tony has registered successfully
+2022-05-23 20:58:59,385 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Session created
+2022-05-23 20:58:59,385 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Set session locales --> [en, ru]
+2022-05-23 20:58:59,385 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Set session selected locale --> en
+2022-05-23 21:02:34,353 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:02:37,904 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3543 ms
+2022-05-23 21:02:37,928 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:02:37,936 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-05-23 21:02:38,104 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 21:02:38,104 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 21:02:38,104 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 21:03:58,257 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:04:01,696 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3424 ms
+2022-05-23 21:04:01,727 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:04:01,743 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 21:04:12,754 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-23 21:04:12,754 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-23 21:04:12,754 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 21:06:36,432 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:06:39,832 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3400 ms
+2022-05-23 21:06:39,879 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:06:39,879 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 21:07:00,901 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 21:07:00,901 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 21:07:00,901 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 21:10:44,983 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:10:48,100 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3117 ms
+2022-05-23 21:10:48,131 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:10:48,147 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 21:10:59,675 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-23 21:10:59,675 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-23 21:10:59,675 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 21:14:10,744 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:14:13,813 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3053 ms
+2022-05-23 21:14:13,844 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:14:13,844 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 21:14:22,322 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 21:14:22,322 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 21:14:22,322 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 21:15:13,306 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:15:16,540 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3218 ms
+2022-05-23 21:15:16,572 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:15:16,572 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 21:15:18,060 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 21:15:18,060 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 21:15:18,060 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 21:19:43,952 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:19:47,124 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3157 ms
+2022-05-23 21:19:47,155 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:19:47,171 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-05-23 21:20:02,232 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-05-23 21:20:02,232 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-05-23 21:20:02,232 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-05-23 21:21:08,682 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-23 21:21:11,889 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3191 ms
+2022-05-23 21:21:11,920 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-23 21:21:11,920 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-23 21:21:12,096 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-23 21:21:12,096 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-23 21:21:12,096 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-23 21:22:49,172 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-8] No mapping for GET /tax-office/service/toHome

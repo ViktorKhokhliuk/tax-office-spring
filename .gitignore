@@ -1,0 +1,5 @@
+target/
+.idea/
+temp/
+webapp/upload/
+*.class

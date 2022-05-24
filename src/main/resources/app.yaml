@@ -1,0 +1,8 @@
+mysql_jdbc_Driver: com.mysql.cj.jdbc.Driver
+jdbc_url: jdbc:mysql://localhost:3306/tax_office_spring?createDatabaseIfNotExist=true
+user_name: root
+password: root
+change_log_file: /db/liquibase/changelog-master.yaml
+tomcat_port: 8080
+context_path: /tax-office
+base_dir: temp
