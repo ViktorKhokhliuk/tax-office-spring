@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
+ pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="/WEB-INF/tag/language.tld" prefix="lan" %>
 <!DOCTYPE html>
@@ -195,7 +195,7 @@
            <input type="hidden" name="type" value="${type}"/>
            <input type="hidden" name="name" value="${name}"/>
            <input type="hidden" name="surname" value="${surname}"/>
-           <input type="hidden" name="itn" value="${itn}"/>
+           <input type="hidden" name="tin" value="${tin}"/>
            <button type="submit" class="btn btn-link" >${i}</button>
        </form>
        </c:forEach>

@@ -12,11 +12,11 @@ public class ReportData {
     private Long id;
     private String person;
     private String nationality;
-    private String year;
+    private String taxYear;
     private Integer quarter;
     private Integer monthNumber;
     private String group;
     private String activity;
     private String income;
-    private Long reportId;
+
 }

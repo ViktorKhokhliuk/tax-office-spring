@@ -22,9 +22,10 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class UserController {
 
-    private final Map<UserRole, String> views;
+    private final Map<UserRole, String> userViews;
     private final UserService userService;
     private final QueryParameterResolver queryParameterResolver;
+    private static final String CONTEXT_PATH = "/tax-office";
 
     @PostMapping("/login")
     public RedirectView login(HttpServletRequest request) {
@@ -32,7 +33,7 @@ public class UserController {
         User registeredUser = userService.getUserByLogin(userLoginDto);
         HttpSession session = request.getSession(true);
         session.setAttribute("user", registeredUser);
-        return new RedirectView(views.get(registeredUser.getUserRole()));
+        return new RedirectView(CONTEXT_PATH + userViews.get(registeredUser.getUserRole()));
     }
 
     @PostMapping("/logout")
@@ -41,7 +42,7 @@ public class UserController {
         if (session != null)
             session.invalidate();
 
-        return new RedirectView("/tax-office/index.jsp");
+        return new RedirectView(CONTEXT_PATH + "/index.jsp");
     }
 
     @PostMapping("/changeLocale")
@@ -52,12 +53,12 @@ public class UserController {
         HttpSession session = request.getSession(false);
         session.setAttribute("selectedLocale", locale);
         log.info("Set session selected locale --> " + selectedLocale);
-        return new RedirectView("/tax-office/" + view);
+        return new RedirectView(CONTEXT_PATH + view);
     }
 
     @GetMapping("/home")
     public ModelAndView toHome(HttpServletRequest request) {
         User user = (User) request.getSession(false).getAttribute("user");
-        return new ModelAndView(views.get(user.getUserRole()));
+        return new ModelAndView(userViews.get(user.getUserRole()));
     }
 }

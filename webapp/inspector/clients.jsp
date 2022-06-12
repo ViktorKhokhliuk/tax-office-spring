@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
+ pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="/WEB-INF/tag/language.tld" prefix="lan" %>
 <!DOCTYPE html>
@@ -49,7 +49,7 @@
 				<form accept-charset="UTF-8" method="POST" action="/tax-office/service/logout" class = "logout">
                 <button type="submit" class="btn btn-primary"><lan:print message="logout"/></button>
                 </form>
-                <form action="/tax-office/service/toHome" method="GET">
+                <form action="/tax-office/service/home" method="GET">
                 <button type="submit" class="btn btn-primary"><lan:print message="home"/></button>
                 </form>
 		</nav>
@@ -57,19 +57,19 @@
  <br>
  	<h3 class="text-center"><lan:print message="list_clients"/></h3>
  	<hr>
- <form action = "/tax-office/service/searchClients"  method="GET" class = "search" align="right">
+ <form action = "/tax-office/service/client/search" method="GET" class = "search" align="right">
        <div class="form-group">
           <label for="name"><lan:print message="name"/>:</label>
           <input type="text" name="name" placeholder="<lan:print message="enter_name"/>"/>
-          <label for="name"><lan:print message="surname"/>:</label>
+          <label for="surname"><lan:print message="surname"/>:</label>
           <input type="text" name="surname" placeholder="<lan:print message="enter_surname"/>"/>
-          <label for="name"><lan:print message="tin"/>:</label>
+          <label for="tin"><lan:print message="tin"/>:</label>
           <input type="text" name="tin"= placeholder="<lan:print message="enter_tin"/>"/>
           <input type="hidden" name="page" value="1">
           <button type="submit" class="btn btn-outline-dark"><lan:print message="search"/></button>
        </div>
-       </form>
-       <form action = "/tax-office/service/allClients"  method="GET" class = "clients">
+ </form>
+       <form action = "/tax-office/service/client"  method="GET" class = "clients">
            <input type="hidden" name="page" value="1">
            <button type="submit" class="btn btn-primary"><lan:print message="all_clients"/></button>
        </form>
@@ -95,14 +95,14 @@
 							<td><c:out value="${client.surname}" /></td>
 							<td><c:out value="${client.tin}" /></td>
 							<td>
-                               <form action = "/tax-office/service/allReportsByClient" method = "GET">
+                               <form action = "/tax-office/service/report/client" method = "GET">
 							     <input type="hidden" name="clientId" value="${client.id}"/>
 							     <input type="hidden" name="page" value="1">
 							     <input type="hidden" name="clientLogin" value="<c:out value='${client.login}'/>"/>
 							     <button type="submit" class="btn btn-outline-info"><lan:print message="reports"/></button>
 							   </form>
-							   <form action="/tax-office/service/deleteClientById" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
-                                 <input type="hidden" name="clientId" value="${client.id}"/>
+							   <form action="/tax-office/service/client/delete" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
+                                 <input type="hidden" name="id" value="${client.id}"/>
                                  <input type="hidden" name="page" value="${page}">
                                  <button type="submit" class="btn btn-outline-danger"><lan:print message="delete"/></button>
                                </form>
@@ -113,5 +113,16 @@
 			</table>
 			<br>
 	</div>
+	<c:if test = "${countOfPages != 0}">
+         <c:forEach var = "i" begin = "1" end = "${countOfPages}">
+             <form action = "/tax-office/service/client/search"  method="GET" class = page style="float:left">
+                     <input type="hidden" name="page" value="${i}"/>
+                     <input type="hidden" name="name" value="${name}"/>
+                     <input type="hidden" name="surname" value="${surname}"/>
+                     <input type="hidden" name="tin" value="${tin}"/>
+                     <button type="submit" class="btn btn-link" >${i}</button>
+             </form>
+         </c:forEach>
+    </c:if>
 </body>
 </html>

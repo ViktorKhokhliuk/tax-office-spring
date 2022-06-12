@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
+ pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="/WEB-INF/tag/language.tld" prefix="lan" %>
 <!DOCTYPE html>
@@ -52,7 +52,7 @@
                 </form>
             </div>
             <div>
-                <form action="/tax-office/service/toHome" method="GET">
+                <form action="/tax-office/service/home" method="GET">
                 <button type="submit" class="btn btn-primary"><lan:print message="home"/></button>
                 </form>
             </div>

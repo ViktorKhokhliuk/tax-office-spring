@@ -1,68 +1,17 @@
 databaseChangeLog:
   - changeSet:
-      id: 3
+      id: 4
       author: Viktor_Khokhliuk
       changes:
-        - createTable:
-            tableName: report_data
+        - insert:
             columns:
               - column:
-                  name: id
-                  type: BIGINT
-                  autoIncrement: true
-                  constraints:
-                    primaryKey: true
-                    nullable: false
+                  name: login
+                  value: admin
               - column:
-                  name: person
-                  type: VARCHAR(60)
-                  constraints:
-                    nullable: false
+                  name: password
+                  value: admin
               - column:
-                  name: nationality
-                  type: VARCHAR(60)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: year
-                  type: VARCHAR(30)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: quarter
-                  type: INT
-                  constraints:
-                    nullable: false
-              - column:
-                  name: month_number
-                  type: INT
-                  constraints:
-                    nullable: false
-              - column:
-                  name: group
-                  type: VARCHAR(30)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: activity
-                  type: VARCHAR(200)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: income
-                  type: VARCHAR(200)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: report_id
-                  type: BIGINT
-                  constraints:
-                    unique: true
-                    nullable: false
-
-        - addForeignKeyConstraint:
-            baseColumnNames: report_id
-            baseTableName: report_data
-            constraintName: fk_reportId
-            referencedColumnNames: id
-            referencedTableName: report
+                  name: role
+                  value: INSPECTOR
+            tableName: user

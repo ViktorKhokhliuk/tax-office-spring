@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.project.spring.tax_office.infra.web.QueryParameterResolver;
 import org.project.spring.tax_office.logic.entity.dto.ClientRegistrationDto;
+import org.project.spring.tax_office.logic.entity.dto.ClientSearchDto;
 import org.project.spring.tax_office.logic.entity.user.Client;
 import org.project.spring.tax_office.logic.service.ClientService;
 import org.springframework.stereotype.Controller;
@@ -38,22 +39,30 @@ public class ClientController {
     public ModelAndView getAll(@RequestParam("page") int page) {
         ModelAndView modelAndView = new ModelAndView("/inspector/clients.jsp");
         modelAndView.addObject("clients", clientService.getAll(page));
-        modelAndView.addObject("countOfPage", clientService.getCountOfPage());
+        modelAndView.addObject("countOfPages", clientService.getCountOfPagesForAll());
         modelAndView.addObject("page", page);
         return modelAndView;
     }
 
     @PostMapping("/delete")
-    public RedirectView delete(HttpServletRequest request, RedirectAttributes attributes) {
-        int page = Integer.parseInt(request.getParameter("page"));
-        long id = Long.parseLong(request.getParameter("id"));
+    public RedirectView delete(@RequestParam("id") Long id,
+                               @RequestParam("page") int page,
+                               RedirectAttributes attributes) {
         clientService.deleteById(id);
         attributes.addAttribute("page", page);
         return new RedirectView("/tax-office/service/client");
     }
 
-//    @GetMapping("/search")
-//    public ModelAndView searchClientsByParameters(HttpServletRequest request) {
-//
-//    }
+    @GetMapping("/search")
+    public ModelAndView searchClientsByParameters(HttpServletRequest request) {
+        ClientSearchDto clientSearchDto = queryParameterResolver.getObject(request, ClientSearchDto.class);
+        ModelAndView modelAndView = new ModelAndView("/inspector/clients.jsp");
+        modelAndView.addObject("clients", clientService.getClientsBySearchParameters(clientSearchDto));
+        modelAndView.addObject("countOfPages", clientService.getCountOfPagesForSearchParameters(clientSearchDto));
+        modelAndView.addObject("name", clientSearchDto.getName());
+        modelAndView.addObject("surname", clientSearchDto.getSurname());
+        modelAndView.addObject("tin", clientSearchDto.getTin());
+        modelAndView.addObject("page", clientSearchDto.getPage());
+        return modelAndView;
+    }
 }

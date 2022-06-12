@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
+ pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="/WEB-INF/tag/language.tld" prefix="lan" %>
 <!DOCTYPE html>
@@ -55,11 +55,12 @@
     <hr>
  <p>
           <div class = "box">
-             <form method="POST" action="/tax-office/service/upload" enctype="multipart/form-data" class="form-horizontal" >
+             <form method="POST" action="/tax-office/service/report/upload" enctype="multipart/form-data" class="form-horizontal" >
                    <h3><lan:print message="upload_report"/></h3>
                    <div class="form-group">
                      <label for="uploadFile" class="col-xs-2 control-label"><lan:print message="choose_file"/>:</label>
-                       <input type="file" name="part" required/><br>
+                       <input type="file" name="file" required/><br>
+                       <input type="hidden" name="clientId" value="${user.id}"/>
                    </div>
                    <div class="form-group">
                      <label for="selectType" class="col-xs-2 control-label"><lan:print message="choose_type"/>:</label>
@@ -76,11 +77,13 @@
                      </div>
                    </div>
              </form>
-             <form action = "/tax-office/service/allReportsByClient"  method="GET" class = reports>
-                <input type="hidden" name="clientId" value="${user.id}"/><br><br>
+
+             <form action = "/tax-office/service/report/client"  method="GET" class = reports>
+                <input type="hidden" name="clientId" value="${user.id}"/>
                 <input type="hidden" name="page" value="1">
                 <button type="submit" class="btn btn-primary btn-lg"><lan:print message="my_reports"/></button>
              </form>
           </div>
+          ${message}
     </body>
 </html>

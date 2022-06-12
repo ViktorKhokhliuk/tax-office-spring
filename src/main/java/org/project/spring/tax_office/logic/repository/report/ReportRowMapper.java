@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 
 @Component
 public class ReportRowMapper implements RowMapper<Report> {
@@ -13,11 +14,11 @@ public class ReportRowMapper implements RowMapper<Report> {
     public Report mapRow(ResultSet resultSet, int rowNum) throws SQLException {
         long id = resultSet.getLong("id");
         String title = resultSet.getString("title");
-        String date = resultSet.getString("date");
+        LocalDate date = resultSet.getDate("date").toLocalDate();
         String type = resultSet.getString("type");
         String status = resultSet.getString("status");
         String info = resultSet.getString("info");
         long clientId = resultSet.getLong("client_id");
-        return new Report(id,title,date,type,status,info,clientId);
+        return new Report(id, title, date, type, status, info, clientId);
     }
 }

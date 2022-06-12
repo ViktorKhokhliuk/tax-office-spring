@@ -2,6 +2,7 @@ package org.project.spring.tax_office.logic.service;
 
 import lombok.RequiredArgsConstructor;
 import org.project.spring.tax_office.logic.entity.dto.ClientRegistrationDto;
+import org.project.spring.tax_office.logic.entity.dto.ClientSearchDto;
 import org.project.spring.tax_office.logic.entity.user.Client;
 import org.project.spring.tax_office.logic.repository.client.ClientRepository;
 import org.springframework.stereotype.Service;
@@ -29,8 +30,18 @@ public class ClientService {
         return clientRepository.getAll(index);
     }
 
-    public double getCountOfPage() {
-        double countOfPage = clientRepository.getCountOfPage();
-        return Math.ceil(countOfPage / 5);
+    public List<Client> getClientsBySearchParameters(ClientSearchDto clientSearchDto) {
+        int index = (clientSearchDto.getPage() - 1) * 5;
+        return clientRepository.getClientsBySearchParameters(clientSearchDto, index);
+    }
+
+    public double getCountOfPagesForAll() {
+        double countOfFields = clientRepository.getCountOfFieldsForAll();
+        return Math.ceil(countOfFields / 5);
+    }
+
+    public double getCountOfPagesForSearchParameters(ClientSearchDto clientSearchDto) {
+        double countOfFields = clientRepository.getCountOfFieldsForSearchParameters(clientSearchDto);
+        return Math.ceil(countOfFields/5);
     }
 }

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
+ pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="/WEB-INF/tag/language.tld" prefix="lan" %>
 <!DOCTYPE html>
@@ -56,7 +56,7 @@
      </div>
 
      <div class=" form-group row">
-      <label for="itn" class="col-sm-2 col-form-label"><lan:print message="tin"/></label>
+      <label for="tin" class="col-sm-2 col-form-label"><lan:print message="tin"/></label>
       <div class="col-sm-7">
        <input type="text" class="form-control" name="tin"
         required pattern = "[0-9]{12}"

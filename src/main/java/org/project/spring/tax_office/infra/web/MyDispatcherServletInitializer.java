@@ -8,11 +8,9 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import javax.servlet.FilterRegistration;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
+import javax.servlet.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -35,6 +33,7 @@ public class MyDispatcherServletInitializer implements WebApplicationInitializer
 
         DispatcherServlet dispatcherServlet = new DispatcherServlet(new GenericWebApplicationContext());
         ServletRegistration.Dynamic registration = servletContext.addServlet("dispatcher", dispatcherServlet);
+
         registration.setLoadOnStartup(1);
         registration.addMapping("/service/*");
     }
@@ -47,4 +46,22 @@ public class MyDispatcherServletInitializer implements WebApplicationInitializer
         return new LocaleSessionListener(locales, selectedLocale);
     }
 }
+//    public class MyDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+//
+//    @Override
+//    protected Class<?>[] getRootConfigClasses() {
+//        return new Class[0];
+//    }
+//
+//    @Override
+//    protected Class<?>[] getServletConfigClasses() {
+//        return new Class[0];
+//    }
+//
+//    @Override
+//    protected String[] getServletMappings() {
+//        return new String[0];
+//    }
+//}
+
 

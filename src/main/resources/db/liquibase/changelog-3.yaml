@@ -41,11 +41,14 @@ databaseChangeLog:
               - column:
                   name: client_id
                   type: BIGINT
+                  constraints:
+                    nullable: false
 
 
         - addForeignKeyConstraint:
             baseColumnNames: client_id
             baseTableName: report
-            constraintName: fk_clientId
+            constraintName: fk_client_id
+            onDelete: CASCADE
             referencedColumnNames: id
             referencedTableName: client

@@ -1,17 +1,62 @@
 databaseChangeLog:
   - changeSet:
-      id: 4
+      id: 3
       author: Viktor_Khokhliuk
       changes:
-        - insert:
+        - createTable:
+            tableName: report_data
             columns:
               - column:
-                  name: login
-                  value: admin
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
               - column:
-                  name: password
-                  value: admin
+                  name: person
+                  type: VARCHAR(60)
+                  constraints:
+                    nullable: false
               - column:
-                  name: role
-                  value: INSPECTOR
-            tableName: user
+                  name: nationality
+                  type: VARCHAR(60)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: tax_year
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: quarter
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: month_number
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: tax_group
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: activity
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: income
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseColumnNames: id
+            baseTableName: report_data
+            constraintName: fk_report_id
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: report

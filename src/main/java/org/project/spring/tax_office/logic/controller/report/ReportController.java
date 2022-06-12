@@ -20,14 +20,14 @@ import java.util.Map;
 public class ReportController {
 
     private final ReportService reportService;
-    private final Map<UserRole, String> views;
+    private final Map<UserRole, String> reportViews;
     private final QueryParameterResolver queryParameterResolver;
 
     @GetMapping()
     public ModelAndView getAll(@RequestParam("page") int page) {
         ModelAndView modelAndView = new ModelAndView("/inspector/reports.jsp");
         modelAndView.addObject("reports", reportService.getAll(page));
-        modelAndView.addObject("countOfPage", reportService.getCountOfPageForAll());
+        modelAndView.addObject("countOfPages", reportService.getCountOfPagesForAll());
         modelAndView.addObject("page", page);
         return modelAndView;
     }
@@ -37,9 +37,9 @@ public class ReportController {
         User user = (User) request.getSession(false).getAttribute("user");
         int page = Integer.parseInt(request.getParameter("page"));
         Long clientId = Long.valueOf(request.getParameter("clientId"));
-        ModelAndView modelAndView = new ModelAndView(views.get(user.getUserRole()));
+        ModelAndView modelAndView = new ModelAndView(reportViews.get(user.getUserRole()));
         modelAndView.addObject("reports", reportService.getClientReports(clientId, page));
-        modelAndView.addObject("countOfPage", reportService.getCountOfPageForClientReports(clientId));
+        modelAndView.addObject("countOfPages", reportService.getCountOfPagesForClientReports(clientId));
         modelAndView.addObject("page", page);
         return modelAndView;
     }

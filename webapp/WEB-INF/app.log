@@ -248,3 +248,712 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2022-05-23 21:21:12,096 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
 2022-05-23 21:21:12,096 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
 2022-05-23 21:22:49,172 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-8] No mapping for GET /tax-office/service/toHome
+2022-05-25 14:49:42,154 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-25 14:49:45,795 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3641 ms
+2022-05-25 14:49:45,811 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-25 14:49:45,826 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-05-25 14:49:49,978 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-25 14:49:49,978 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-25 14:49:49,978 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-25 14:50:03,206 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-4] Client: tony tony has registered successfully
+2022-05-25 14:50:38,542 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-05-25 14:50:42,043 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3501 ms
+2022-05-25 14:50:42,090 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-05-25 14:50:42,090 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-05-25 14:50:52,753 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-25 14:50:52,753 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-25 14:50:52,753 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-05-25 14:51:39,984 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Session created
+2022-05-25 14:51:39,984 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Set session locales --> [en, ru]
+2022-05-25 14:51:39,984 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Set session selected locale --> en
+2022-05-25 14:52:05,775 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-05-25 14:52:05,775 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-05-25 14:52:05,775 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-06 15:11:19,923 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-06 15:11:21,611 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/project/spring/tax_office/infra/config/db/LiquibaseConfig.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/liquibase/changelog-5.yaml::3::Viktor_Khokhliuk:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, y' at line 1 [Failed SQL: (1064) CREATE TABLE tax_office_spring.report_data (report_id BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, year VARCHAR(30) NOT NULL, quarter INT NOT NULL, month_number INT NOT NULL, `group` VARCHAR(30) NOT NULL, activity VARCHAR(200) NOT NULL, income VARCHAR(200) NOT NULL, CONSTRAINT PK_REPORT_DATA PRIMARY KEY (report_id))]
+2022-06-06 15:11:21,619 ERROR o.s.w.c.ContextLoader [main] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/project/spring/tax_office/infra/config/db/LiquibaseConfig.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/liquibase/changelog-5.yaml::3::Viktor_Khokhliuk:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, y' at line 1 [Failed SQL: (1064) CREATE TABLE tax_office_spring.report_data (report_id BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, year VARCHAR(30) NOT NULL, quarter INT NOT NULL, month_number INT NOT NULL, `group` VARCHAR(30) NOT NULL, activity VARCHAR(200) NOT NULL, income VARCHAR(200) NOT NULL, CONSTRAINT PK_REPORT_DATA PRIMARY KEY (report_id))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.Application.main(Application.java:18) [classes/:?]
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/liquibase/changelog-5.yaml::3::Viktor_Khokhliuk:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, y' at line 1 [Failed SQL: (1064) CREATE TABLE tax_office_spring.report_data (report_id BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, year VARCHAR(30) NOT NULL, quarter INT NOT NULL, month_number INT NOT NULL, `group` VARCHAR(30) NOT NULL, activity VARCHAR(200) NOT NULL, income VARCHAR(200) NOT NULL, CONSTRAINT PK_REPORT_DATA PRIMARY KEY (report_id))]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:124) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.6.2.jar:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 37 more
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/liquibase/changelog-5.yaml::3::Viktor_Khokhliuk:
+     Reason: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, y' at line 1 [Failed SQL: (1064) CREATE TABLE tax_office_spring.report_data (report_id BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, year VARCHAR(30) NOT NULL, quarter INT NOT NULL, month_number INT NOT NULL, `group` VARCHAR(30) NOT NULL, activity VARCHAR(200) NOT NULL, income VARCHAR(200) NOT NULL, CONSTRAINT PK_REPORT_DATA PRIMARY KEY (report_id))]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:695) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:244) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.6.2.jar:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 37 more
+Caused by: liquibase.exception.DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, y' at line 1 [Failed SQL: (1064) CREATE TABLE tax_office_spring.report_data (report_id BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, year VARCHAR(30) NOT NULL, quarter INT NOT NULL, month_number INT NOT NULL, `group` VARCHAR(30) NOT NULL, activity VARCHAR(200) NOT NULL, income VARCHAR(200) NOT NULL, CONSTRAINT PK_REPORT_DATA PRIMARY KEY (report_id))]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:660) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:244) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.6.2.jar:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 37 more
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BIGIN NOT NULL, person VARCHAR(60) NOT NULL, nationality VARCHAR(60) NOT NULL, y' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:?]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:660) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:49) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:111) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:110) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:94) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:244) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:66) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.lambda$child$0(Scope.java:177) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:186) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:176) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Scope.child(Scope.java:155) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2404) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.6.2.jar:?]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.6.2.jar:?]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 37 more
+2022-06-06 15:13:10,146 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-06 15:13:11,755 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1606 ms
+2022-06-06 15:13:11,768 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-06 15:13:11,771 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2022-06-11 13:20:26,844 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-11 13:20:28,345 WARN o.s.w.c.s.AnnotationConfigWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'xmlParser' defined in file [D:\Projects\My\tax-office-spring\target\classes\org\project\spring\tax_office\logic\parser\XmlParser.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.xml.parsers.DocumentBuilderFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-11 13:20:28,361 ERROR o.s.w.c.ContextLoader [main] Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'xmlParser' defined in file [D:\Projects\My\tax-office-spring\target\classes\org\project\spring\tax_office\logic\parser\XmlParser.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.xml.parsers.DocumentBuilderFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) [?:?]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.Application.main(Application.java:18) [classes/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.xml.parsers.DocumentBuilderFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 40 more
+2022-06-11 13:25:40,139 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-11 13:25:43,733 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3594 ms
+2022-06-11 13:25:43,764 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-11 13:25:43,764 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 13:25:09,265 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 13:25:12,659 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3376 ms
+2022-06-12 13:25:12,690 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 13:25:12,690 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 13:25:26,416 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 13:25:26,416 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 13:25:26,416 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 13:25:50,672 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-6] No mapping for GET /tax-office/service/toHome
+2022-06-12 13:25:58,541 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-7] No mapping for GET /tax-office/service/allReports
+2022-06-12 13:26:17,092 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-9] Client: tony tony has registered successfully
+2022-06-12 13:27:04,836 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 13:27:08,334 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3482 ms
+2022-06-12 13:27:08,366 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 13:27:08,366 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 13:27:21,774 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 13:27:21,790 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 13:27:21,790 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 13:42:30,115 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 13:42:33,284 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3162 ms
+2022-06-12 13:42:33,312 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 13:42:33,318 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-06-12 13:42:41,569 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 13:42:41,569 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 13:42:41,569 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 13:43:17,849 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 13:43:21,369 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3511 ms
+2022-06-12 13:43:21,397 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 13:43:21,403 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-06-12 13:43:39,977 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 13:43:39,978 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 13:43:39,978 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 13:55:45,109 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 13:55:48,544 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3426 ms
+2022-06-12 13:55:48,593 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 13:55:48,600 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-06-12 13:55:54,896 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 13:55:54,898 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 13:55:54,898 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 13:56:03,485 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-2] Set session selected locale --> ru
+2022-06-12 13:56:06,511 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-5] Set session selected locale --> en
+2022-06-12 14:03:12,835 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:03:16,526 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3683 ms
+2022-06-12 14:03:16,557 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:03:16,563 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-06-12 14:05:57,545 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:05:57,545 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:05:57,545 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:08:53,237 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-9] No mapping for GET /tax-office/service/allReportsByClient
+2022-06-12 14:25:47,708 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:25:51,190 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3473 ms
+2022-06-12 14:25:51,219 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:25:51,224 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 5 ms
+2022-06-12 14:25:59,137 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:25:59,138 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:25:59,139 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:26:02,717 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-2] Set session selected locale --> ru
+2022-06-12 14:26:04,246 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-4] Set session selected locale --> en
+2022-06-12 14:26:13,563 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-9] Set session selected locale --> ru
+2022-06-12 14:27:03,335 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 14:27:05,659 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-4] Set session selected locale --> ru
+2022-06-12 14:28:23,444 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:28:26,970 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3513 ms
+2022-06-12 14:28:27,017 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:28:27,017 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 14:28:58,444 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:28:58,445 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:28:58,445 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:29:05,265 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-3] Set session selected locale --> ru
+2022-06-12 14:29:17,971 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-5] Set session selected locale --> ru
+2022-06-12 14:29:19,577 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-7] Set session selected locale --> en
+2022-06-12 14:29:39,621 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-10] Set session selected locale --> ru
+2022-06-12 14:30:34,688 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-9] No mapping for GET /tax-office/service/report/inspector/clientReports.jsp
+2022-06-12 14:31:53,808 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /tax-office/service/report/inspector/clientReports.jsp
+2022-06-12 14:40:25,335 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:40:28,419 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3069 ms
+2022-06-12 14:40:28,450 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:40:28,466 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-12 14:40:39,157 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:40:42,720 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3547 ms
+2022-06-12 14:40:42,751 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:40:42,767 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-12 14:40:49,337 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:40:49,337 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:40:49,337 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:43:01,075 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:43:04,595 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3504 ms
+2022-06-12 14:43:04,611 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:43:04,626 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-12 14:43:22,257 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:43:22,257 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:43:22,257 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:44:39,307 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:44:42,915 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3608 ms
+2022-06-12 14:44:42,947 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:44:42,947 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 14:44:51,083 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:44:51,083 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:44:51,083 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:46:18,624 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:46:22,150 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3526 ms
+2022-06-12 14:46:22,181 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:46:22,181 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 14:46:26,720 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:46:26,720 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:46:26,720 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:46:42,590 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-7] No mapping for GET /tax-office/service/allReportsByClient
+2022-06-12 14:51:45,035 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:51:48,151 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3116 ms
+2022-06-12 14:51:48,183 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:51:48,198 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-12 14:51:53,111 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:51:53,111 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:51:53,111 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:52:15,058 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:52:18,205 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3132 ms
+2022-06-12 14:52:18,221 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:52:18,236 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-12 14:52:59,603 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 14:52:59,611 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 14:52:59,611 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 14:53:06,454 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-6] Session created
+2022-06-12 14:53:06,454 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-6] Set session locales --> [en, ru]
+2022-06-12 14:53:06,454 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-6] Set session selected locale --> en
+2022-06-12 14:57:20,948 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:57:24,004 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3041 ms
+2022-06-12 14:57:24,036 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:57:24,036 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 14:57:38,793 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:57:38,793 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:57:38,793 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:58:11,498 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 14:58:11,498 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 14:58:11,498 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 14:59:10,335 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 14:59:13,850 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3515 ms
+2022-06-12 14:59:13,882 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 14:59:13,882 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 14:59:25,515 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 14:59:25,515 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 14:59:25,515 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 14:59:33,879 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-4] No mapping for GET /tax-office/service/toHome
+2022-06-12 15:46:28,303 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 15:46:31,805 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3502 ms
+2022-06-12 15:46:31,836 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 15:46:31,836 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 15:46:44,430 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 15:46:44,430 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 15:46:44,430 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 15:47:43,837 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 15:47:47,320 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3467 ms
+2022-06-12 15:47:47,351 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 15:47:47,367 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-12 15:47:51,817 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 15:47:51,817 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 15:47:51,817 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 15:57:47,182 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 15:57:50,693 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3511 ms
+2022-06-12 15:57:50,724 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 15:57:50,724 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 15:57:59,281 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 15:57:59,281 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 15:57:59,281 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 15:58:13,908 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2022-06-12 15:59:42,677 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 15:59:46,263 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3569 ms
+2022-06-12 15:59:46,278 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 15:59:46,294 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-12 15:59:51,848 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 15:59:51,848 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 15:59:51,848 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 16:24:49,179 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 16:24:50,732 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1546 ms
+2022-06-12 16:24:50,748 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 16:24:50,748 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 16:25:00,717 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 16:25:00,717 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 16:25:00,717 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 16:26:10,783 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 16:26:12,290 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1507 ms
+2022-06-12 16:26:12,306 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 16:26:12,306 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 16:26:20,065 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 16:26:20,065 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 16:26:20,065 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 16:34:06,544 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 16:34:08,084 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1540 ms
+2022-06-12 16:34:08,100 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 16:34:08,100 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 16:34:15,607 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 16:34:15,607 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 16:34:15,607 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 16:36:31,711 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 16:36:33,256 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1545 ms
+2022-06-12 16:36:33,279 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 16:36:33,279 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 16:37:25,008 ERROR o.p.s.t.l.p.JsonParser [http-nio-8080-exec-1] cannot parse json file
+java.lang.IllegalArgumentException: URI is not absolute
+	at java.net.URL.fromURI(URL.java:721) ~[?:?]
+	at java.net.URI.toURL(URI.java:1139) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.JsonParser.parse(JsonParser.java:23) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:40) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:56) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-12 16:37:25,039 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 16:37:25,039 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 16:37:25,039 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 16:43:44,495 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 16:43:46,080 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1585 ms
+2022-06-12 16:43:46,095 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 16:43:46,095 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 16:43:48,681 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 16:43:48,681 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 16:43:48,681 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 16:44:14,992 ERROR o.p.s.t.l.p.JsonParser [http-nio-8080-exec-4] cannot parse json file
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "year" (class org.project.spring.tax_office.logic.entity.report.ReportData), not marked as ignorable (9 known properties: "person", "taxYear", "monthNumber", "id", "nationality", "group", "income", "quarter", "activity"])
+ at [Source: (File); line: 1, column: 55] (through reference chain: org.project.spring.tax_office.logic.entity.report.ReportData["year"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1989) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:319) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3494) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at org.project.spring.tax_office.logic.parser.JsonParser.parse(JsonParser.java:22) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:39) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:56) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-12 16:56:09,150 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 16:56:10,754 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1604 ms
+2022-06-12 16:56:10,771 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 16:56:10,773 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2022-06-12 16:56:12,825 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 16:56:12,826 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 16:56:12,826 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 17:08:05,533 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.json has uploaded successfully!
+2022-06-12 17:09:22,702 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:09:24,428 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1726 ms
+2022-06-12 17:09:24,444 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:09:24,444 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 17:09:48,646 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 17:09:48,646 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 17:09:48,646 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 17:10:28,062 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:10:29,595 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1533 ms
+2022-06-12 17:10:29,610 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:10:29,610 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 17:10:34,653 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 17:10:34,653 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 17:10:34,653 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 17:10:47,407 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-2] Client: tony tony has registered successfully
+2022-06-12 17:11:18,530 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-6] File valid.json has uploaded successfully!
+2022-06-12 17:13:38,022 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-2] File valid.json has uploaded successfully!
+2022-06-12 17:22:14,515 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:22:15,917 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1386 ms
+2022-06-12 17:22:15,933 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:22:15,948 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-12 17:22:19,424 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 17:22:19,424 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 17:22:19,424 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 17:22:33,638 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-5] File valid.json has uploaded successfully!
+2022-06-12 17:24:44,714 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:24:46,133 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1419 ms
+2022-06-12 17:24:46,147 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:24:46,147 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 17:24:49,779 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 17:24:49,779 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 17:24:49,779 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 17:25:01,968 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.json has uploaded successfully!
+2022-06-12 17:28:11,251 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:28:12,626 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1359 ms
+2022-06-12 17:28:12,642 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:28:12,642 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 17:28:23,808 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 17:28:23,808 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 17:28:23,808 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 17:28:38,776 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.json has uploaded successfully!
+2022-06-12 17:30:34,007 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:30:37,163 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3140 ms
+2022-06-12 17:30:37,179 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:30:37,194 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-12 17:30:42,664 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-12 17:30:42,664 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-12 17:30:42,664 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-12 17:44:07,912 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 17:44:11,477 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3549 ms
+2022-06-12 17:44:11,508 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 17:44:11,508 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 17:44:15,853 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 17:44:15,869 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 17:44:15,869 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 17:44:44,210 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-8] File valid.json has uploaded successfully!
+2022-06-12 19:09:43,599 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 19:09:46,751 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3152 ms
+2022-06-12 19:09:46,782 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 19:09:46,782 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 19:09:57,166 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-1] File valid.json has uploaded successfully!
+2022-06-12 19:09:57,943 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 19:09:57,943 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 19:09:57,943 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 19:10:21,396 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-6] File valid.json has uploaded successfully!
+2022-06-12 19:15:35,481 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 19:15:38,694 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3198 ms
+2022-06-12 19:15:38,710 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 19:15:38,726 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-12 19:15:39,227 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 19:15:39,227 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 19:15:39,227 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 19:15:52,543 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-4] Client: hector hector has registered successfully
+2022-06-12 19:16:02,439 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-8] File valid.json has uploaded successfully!
+2022-06-12 19:16:06,406 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-10] File valid.json has uploaded successfully!
+2022-06-12 20:05:51,639 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 20:05:54,789 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3135 ms
+2022-06-12 20:05:54,821 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 20:05:54,821 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 20:05:59,582 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 20:05:59,582 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 20:05:59,582 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 20:06:17,739 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-4] Client: tony hector has registered successfully
+2022-06-12 21:06:11,155 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 21:06:14,752 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3588 ms
+2022-06-12 21:06:14,783 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 21:06:14,787 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 4 ms
+2022-06-12 21:07:58,905 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 21:07:58,905 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 21:07:58,905 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 21:12:39,819 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 21:12:43,476 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3643 ms
+2022-06-12 21:12:43,492 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 21:12:43,508 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-12 21:12:48,454 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 21:12:48,454 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 21:12:48,454 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-12 21:19:07,535 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-12 21:19:11,039 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3489 ms
+2022-06-12 21:19:11,070 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-12 21:19:11,070 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-12 21:19:15,068 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-12 21:19:15,068 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-12 21:19:15,068 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en

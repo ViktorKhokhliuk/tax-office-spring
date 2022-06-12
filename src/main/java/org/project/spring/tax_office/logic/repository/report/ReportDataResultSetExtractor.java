@@ -24,8 +24,7 @@ public class ReportDataResultSetExtractor implements ResultSetExtractor<Optional
             String group = resultSet.getString("group");
             String activity = resultSet.getString("activity");
             String income = resultSet.getString("income");
-            long reportId = resultSet.getLong("report_id");
-            return Optional.of(new ReportData(id, person, nationality, year, quarter, monthNumber, group, activity, income, reportId));
+            return Optional.of(new ReportData(id, person, nationality, year, quarter, monthNumber, group, activity, income));
         }
         return Optional.empty();
     }

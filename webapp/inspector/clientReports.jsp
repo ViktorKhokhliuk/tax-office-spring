@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
- pageEncoding="UTF-8"%>
+ pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="/WEB-INF/tag/language.tld" prefix="lan" %>
 <!DOCTYPE html>
@@ -63,14 +63,14 @@
 				<form accept-charset="UTF-8" method="POST" action="/tax-office/service/logout" class = "logout">
                    <button type="submit" class="btn btn-primary"><lan:print message="logout"/></button>
                 </form>
-                <form action="/tax-office/service/toHome" method="GET">
+                <form action="/tax-office/service/home" method="GET">
                    <button type="submit" class="btn btn-primary"><lan:print message="home"/></button>
                 </form>
-                <form action = "/tax-office/service/allClients"  method="GET"  class = "clients">
+                <form action = "/tax-office/service/client"  method="GET"  class = "clients">
                    <input type="hidden" name="page" value="1">
                    <button type="submit" class="btn btn-primary"><lan:print message="all_clients"/></button>
                 </form>
-                <form action = "/tax-office/service/allReports"  method="GET" >
+                <form action = "/tax-office/service/report"  method="GET" >
                 <input type="hidden" name="page" value="1"/>
                    <button type="submit" class="btn btn-primary"><lan:print message="all_reports"/></button>
                 </form>
