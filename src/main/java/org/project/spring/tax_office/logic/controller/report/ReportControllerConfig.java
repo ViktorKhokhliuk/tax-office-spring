@@ -10,7 +10,7 @@ import java.util.Map;
 public class ReportControllerConfig {
 
     @Bean
-    public Map<UserRole, String> reportViews() {
+    public Map<UserRole, String> clientReportsViews() {
         return Map.of(UserRole.INSPECTOR, "/inspector/clientReports.jsp", UserRole.CLIENT, "/client/reports.jsp");
     }
 }

@@ -30,7 +30,7 @@
      <div class="form-group row">
       <label for="person" class="col-sm-2 col-form-label"><lan:print message="person"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.person}" class="form-control" name="person"
+       <input type="text" value = "${reportData.person}" class="form-control" name="person"
          readonly disabled>
       </div>
      </div>
@@ -38,7 +38,7 @@
      <div class="form-group row">
       <label for="nationality" class="col-sm-2 col-form-label"><lan:print message="nationality"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.nationality}" class="form-control" name="nationality"
+       <input type="text" value = "${reportData.nationality}" class="form-control" name="nationality"
          readonly disabled>
       </div>
      </div>
@@ -46,7 +46,7 @@
      <div class="form-group row">
       <label for="year" class="col-sm-2 col-form-label"><lan:print message="year"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.year}" class="form-control" name="year"
+       <input type="text" value = "${reportData.taxYear}" class="form-control" name="year"
          readonly disabled>
       </div>
      </div>
@@ -54,7 +54,7 @@
      <div class="form-group row">
       <label for="quarter" class="col-sm-2 col-form-label"><lan:print message="quarter"/></label>
       <div class="col-sm-7">
-       <input type="number" min = "1" max = "4" value = "${reportParameters.quarter}" class="form-control" name="quarter"
+       <input type="number" value = "${reportData.quarter}" class="form-control" name="quarter"
          readonly disabled>
       </div>
      </div>
@@ -62,7 +62,7 @@
      <div class="form-group row">
       <label for="month" class="col-sm-2 col-form-label"><lan:print message="month"/></label>
       <div class="col-sm-7">
-       <input type="number" min = "1" max = "12" value = "${reportParameters.month}" class="form-control" name="month"
+       <input type="number" value = "${reportData.monthNumber}" class="form-control" name="month"
          readonly disabled>
       </div>
      </div>
@@ -70,7 +70,7 @@
      <div class="form-group row">
       <label for="group" class="col-sm-2 col-form-label"><lan:print message="group"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.group}" class="form-control" name="group"
+       <input type="text" value = "${reportData.taxGroup}" class="form-control" name="group"
          readonly disabled>
       </div>
      </div>
@@ -78,7 +78,7 @@
      <div class=" form-group row">
       <label for="activity" class="col-sm-2 col-form-label"><lan:print message="activity"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.activity}" class="form-control" name="activity"
+       <input type="text" value = "${reportData.activity}" class="form-control" name="activity"
          readonly disabled>
       </div>
      </div>
@@ -86,7 +86,7 @@
      <div class="form-group row">
       <label for="income" class="col-sm-2 col-form-label"><lan:print message="income"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.income}" class="form-control" name="income"
+       <input type="text" value = "${reportData.income}" class="form-control" name="income"
          readonly disabled>
       </div>
      </div>

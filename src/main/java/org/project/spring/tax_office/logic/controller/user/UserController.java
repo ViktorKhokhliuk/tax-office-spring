@@ -22,7 +22,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class UserController {
 
-    private final Map<UserRole, String> userViews;
+    private final Map<UserRole, String> userHomePageViews;
     private final UserService userService;
     private final QueryParameterResolver queryParameterResolver;
     private static final String CONTEXT_PATH = "/tax-office";
@@ -33,7 +33,7 @@ public class UserController {
         User registeredUser = userService.getUserByLogin(userLoginDto);
         HttpSession session = request.getSession(true);
         session.setAttribute("user", registeredUser);
-        return new RedirectView(CONTEXT_PATH + userViews.get(registeredUser.getUserRole()));
+        return new RedirectView(CONTEXT_PATH + userHomePageViews.get(registeredUser.getUserRole()));
     }
 
     @PostMapping("/logout")
@@ -59,6 +59,6 @@ public class UserController {
     @GetMapping("/home")
     public ModelAndView toHome(HttpServletRequest request) {
         User user = (User) request.getSession(false).getAttribute("user");
-        return new ModelAndView(userViews.get(user.getUserRole()));
+        return new ModelAndView(userHomePageViews.get(user.getUserRole()));
     }
 }

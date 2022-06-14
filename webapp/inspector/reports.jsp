@@ -67,7 +67,7 @@
 				<form accept-charset="UTF-8" method="POST" action="/tax-office/service/logout" class = "logout">
                 <button type="submit" class="btn btn-primary"><lan:print message="logout"/></button>
                 </form>
-                <form action="/tax-office/service/toHome" method="GET">
+                <form action="/tax-office/service/home" method="GET">
                 <button type="submit" class="btn btn-primary"><lan:print message="home"/></button>
                 </form>
 		</nav>
@@ -75,19 +75,22 @@
  <br>
  		<h3 class="text-center"><lan:print message="list_reports"/></h3>
  		<hr>
-       <form action = "/tax-office/service/filterAllReports"  method="GET" class = "search" align = "right">
+       <form action = "/tax-office/service/report/filter"  method="GET" class = "search" align = "right">
               <div class="form-group">
                  <label for="name"><lan:print message="name"/>:</label>
                  <input type="text" name="name" placeholder="<lan:print message="enter_name"/>"/>
                  <label for="name"><lan:print message="surname"/>:</label>
                  <input type="text" name="surname" placeholder="<lan:print message="enter_surname"/>"/>
-                 <label for="name"><lan:print message="itn"/>:</label>
-                 <input type="text" name="itn"= placeholder="<lan:print message="enter_itn"/>"/>
+                 <label for="name"><lan:print message="tin"/>:</label>
+                 <input type="text" name="tin"= placeholder="<lan:print message="enter_tin"/>"/>
                  <input type="hidden" name="page" value="1"/>
+                 <input type="hidden" name="status" value="${dto.status}"/>
+                 <input type="hidden" name="type" value="${dto.type}"/>
+                 <input type="hidden" name="date" value="${dto.date}"/>
                  <button type="submit" class="btn btn-outline-dark"><lan:print message="search"/></button>
               </div>
        </form>
-      <form action = "/tax-office/service/filterAllReports"  method="GET" class="filter" align = "right">
+      <form action = "/tax-office/service/report/filter"  method="GET" class="filter" align = "right">
       <div class="form-group">
          <label for="name"><lan:print message="choose_date"/>:</label>
            <input type="date" name="date"
@@ -107,14 +110,14 @@
               <option value="income tax"><lan:print message="income_tax"/></option>
               <option value="single tax"><lan:print message="single_tax"/></option>
             </select>
-            <input type="hidden" name="name" value="${name}"/>
-            <input type="hidden" name="surname" value="${surname}"/>
-            <input type="hidden" name="itn" value="${itn}"/>
+            <input type="hidden" name="name" value="${dto.name}"/>
+            <input type="hidden" name="surname" value="${dto.surname}"/>
+            <input type="hidden" name="tin" value="${dto.tin}"/>
             <input type="hidden" name="page" value="1"/>
          <button type="submit" class="btn btn-outline-dark"><lan:print message="filter"/></button>
       </div>
       </form>
-      <form action = "/tax-office/service/allReports"  method="GET" class = "reports">
+      <form action = "/tax-office/service/report"  method="GET" class = "reports">
           <input type="hidden" name="page" value="1"/>
           <button type="submit" class="btn btn-primary"><lan:print message="all_reports"/></button>
       </form>
@@ -126,7 +129,7 @@
 					    <th>№</th>
 						<th><lan:print message="title"/></th>
 						<th><lan:print message="client"/></th>
-						<th><lan:print message="itn"/></th>
+						<th><lan:print message="tin"/></th>
 						<th><lan:print message="date"/></th>
 						<th><lan:print message="type_table"/></th>
 						<th><lan:print message="status_table"/></th>
@@ -139,9 +142,9 @@
 					<c:set var = "client" value = "${clients[report.clientId]}"/>
 						<tr>
 						    <td class="counterCell"></td>
-							<td><a href="showReport?clientId=${client.id}&title=<c:out value='${report.title}'/>"target="_blank">${report.title}</a></td>
-							<td><a href="allReportsByClient?clientId=${client.id}&page=1&clientLogin=<c:out value='${client.login}'/>">${client.name} ${client.surname} (${client.login})</td>
-							<td>${client.itn}</td>
+							<td><a href="/tax-office/service/report/data?id=${report.id}" target="_blank">${report.title}</a></td>
+							<td><a href="/tax-office/service/report/client?clientId=${client.id}&page=1&clientLogin=${client.login}">${client.name} ${client.surname} (${client.login})</td>
+							<td>${client.tin}</td>
 							<td>${report.date}</td>
 							<td>${report.type}</td>
 							<td>${report.status}</td>
@@ -150,17 +153,17 @@
 							<button type="button" class="btn btn-outline-dark" data-reportId="${report.id}" data-clientId="${client.id}"
 							data-toggle="modal" data-target="#exampleModal"><lan:print message="not_to_accept"/>
 							</button>
-                                  <form action="/tax-office/service/updateStatusOfReport" method="POST">
-                                      <input type="hidden" name="status" value="ACCEPTED"/>
-                                      <input type="hidden" name="info" value="Report was accepted"/>
-                                      <input type="hidden" name="id" value="${report.id}"/>
+                                  <form action="/tax-office/service/report/update" method="POST">
+                                      <input type="hidden" name="updatedStatus" value="ACCEPTED"/>
+                                      <input type="hidden" name="info" value="Report accepted"/>
+                                      <input type="hidden" name="reportId" value="${report.id}"/>
                                       <input type="hidden" name="clientId" value="${client.id}"/>
-                                      <input type="hidden" name="date" value="${date}"/>
-                                      <input type="hidden" name="statusFilter" value="${status}"/>
-                                      <input type="hidden" name="type" value="${type}"/>
-                                      <input type="hidden" name="name" value="${name}"/>
-                                      <input type="hidden" name="surname" value="${surname}"/>
-                                      <input type="hidden" name="itn" value="${itn}"/>
+                                      <input type="hidden" name="date" value="${dto.date}"/>
+                                      <input type="hidden" name="status" value="${dto.status}"/>
+                                      <input type="hidden" name="type" value="${dto.type}"/>
+                                      <input type="hidden" name="name" value="${dto.name}"/>
+                                      <input type="hidden" name="surname" value="${dto.surname}"/>
+                                      <input type="hidden" name="tin" value="${dto.tin}"/>
                                       <input type="hidden" name="page" value="${page}"/>
                                       <button type="submit" class="btn btn-outline-dark"><lan:print message="accept"/></button>
                                   </form>
@@ -176,7 +179,7 @@
                                       <input type="hidden" name="type" value="${type}"/>
                                       <input type="hidden" name="name" value="${name}"/>
                                       <input type="hidden" name="surname" value="${surname}"/>
-                                      <input type="hidden" name="itn" value="${itn}"/>
+                                      <input type="hidden" name="tin" value="${tin}"/>
                                       <input type="hidden" name="page" value="${page}"/>
                                       <button type="submit" class="btn btn-outline-danger"><lan:print message="delete"/></button>
                                   </form>
@@ -185,20 +188,19 @@
 					</c:forEach>
 				</tbody>
 			</table>
-	<c:if test = "${countOfPage != 0}">
-       <c:forEach var = "i" begin = "1" end = "${countOfPage}">
-       <form action = "/tax-office/service/filterAllReports"  method="GET" class = page style="float:left">
-           <input type="hidden" name="clientId" value="${clientId}"/><br><br>
+	<c:if test = "${countOfPages != 0}">
+      <c:forEach var = "i" begin = "1" end = "${countOfPages}">
+       <form action = "/tax-office/service/report/filter"  method="GET" class = page style="float:left">
            <input type="hidden" name="page" value="${i}"/>
-           <input type="hidden" name="date" value="${date}"/>
-           <input type="hidden" name="status" value="${status}"/>
-           <input type="hidden" name="type" value="${type}"/>
-           <input type="hidden" name="name" value="${name}"/>
-           <input type="hidden" name="surname" value="${surname}"/>
-           <input type="hidden" name="tin" value="${tin}"/>
+           <input type="hidden" name="date" value="${dto.date}"/>
+           <input type="hidden" name="status" value="${dto.status}"/>
+           <input type="hidden" name="type" value="${dto.type}"/>
+           <input type="hidden" name="name" value="${dto.name}"/>
+           <input type="hidden" name="surname" value="${dto.surname}"/>
+           <input type="hidden" name="tin" value="${dto.tin}"/>
            <button type="submit" class="btn btn-link" >${i}</button>
        </form>
-       </c:forEach>
+      </c:forEach>
     </c:if>
 			<br>
     </div>
@@ -212,19 +214,18 @@
                       </button>
                </div>
                <div class="modal-body">
-                   <form action="/tax-office/service/updateStatusOfReport" method="POST">
+                   <form action="/tax-office/service/report/update" method="POST">
                       <textarea rows="10" cols="45" name="info" maxlength="100" required placeholder="<lan:print message="enter_reason"/>"></textarea>
-                      <input type="hidden" name="status" value="UNACCEPTED"/>
-                      <input id="hide1" type="hidden" name="id" value=""/>
+                      <input type="hidden" name="updatedStatus" value="UNACCEPTED"/>
+                      <input id="hide1" type="hidden" name="reportId" value=""/>
                       <input id="hide2" type="hidden" name="clientId" value=""/>
-                      <input type="hidden" name="date" value="${date}"/>
-                      <input type="hidden" name="statusFilter" value="${status}"/>
-                      <input type="hidden" name="type" value="${type}"/>
-                      <input type="hidden" name="name" value="${name}"/>
-                      <input type="hidden" name="surname" value="${surname}"/>
-                      <input type="hidden" name="itn" value="${itn}"/>
+                      <input type="hidden" name="date" value="${dto.date}"/>
+                      <input type="hidden" name="status" value="${dto.status}"/>
+                      <input type="hidden" name="type" value="${dto.type}"/>
+                      <input type="hidden" name="name" value="${dto.name}"/>
+                      <input type="hidden" name="surname" value="${dto.surname}"/>
+                      <input type="hidden" name="tin" value="${dto.tin}"/>
                       <input type="hidden" name="page" value="${page}"/>
-
                </div>
                    <div class="modal-footer">
                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><lan:print message="close"/></button>

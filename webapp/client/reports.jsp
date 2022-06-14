@@ -59,10 +59,10 @@
 		</nav>
 	</header>
  <br>
-	<h3 class="text-center"><lan:print message="list_reports"/></h3>
+	<h3 class="text-center"><lan:print message="my_reports"/></h3>
     <hr>
  <p>
-      <form action = "/tax-office/service/filterClientReports" class = "filter" align="right">
+      <form action = "/tax-office/service/report/client/filter" method="GET" class = "filter" align="right">
       <div class="form-group">
          <label for="name"><lan:print message="choose_date"/>:</label>
            <input type="date" name="date"
@@ -88,7 +88,7 @@
       </div>
       </form>
  <p>
-      <form action = "/tax-office/service/allReportsByClient"  method="GET" align="left" class = "reports">
+      <form action = "/tax-office/service/report/client"  method="GET" align="left" class = "reports">
           <input type="hidden" name="clientId" value="${user.id}"/>
           <input type="hidden" name="page" value="1">
           <button type="submit" class="btn btn-primary"><lan:print message="all_my_reports"/></button>
@@ -111,20 +111,14 @@
 					<c:forEach items="${reports}" var="report">
 						<tr>
 						    <td class="counterCell"></td>
-							<td><a href="showReport?clientId=${user.id}&title=<c:out value='${report.title}'/>"target="_blank">${report.title}</a></td>
+							<td><a href="/tax-office/service/report/data?id=${report.id}" target="_blank">${report.title}</a></td>
 							<td><c:out value="${report.date}" /></td>
                             <td><c:out value="${report.type}" /></td>
                             <td><c:out value="${report.status}" /></td>
                             <td><c:out value="${report.info}" /></td>
 							<td>
-							   <form action="/tax-office/service/editReport" method="GET" >
+							   <form action="/tax-office/service/report/edit" method="GET" target="_blank">
                                   <input type="hidden" name="id" value="${report.id}"/>
-                                  <input type="hidden" name="page" value="${page}"/>
-                                  <input type="hidden" name="clientId" value="${user.id}"/>
-                                  <input type="hidden" name="title" value="${report.title}"/>
-                                  <input type="hidden" name="date" value="${date}"/>
-                                  <input type="hidden" name="statusFilter" value="${status}"/>
-                                  <input type="hidden" name="type" value="${type}"/>
                                   <button type="submit" class="btn btn-outline-primary" ><lan:print message="edit"/></button>
                                </form>
 							   <a href="upload/id${user.id}/${report.title}" download >
@@ -147,14 +141,14 @@
 			</table>
 			<br>
 	</div>
-	<c:if test = "${countOfPage != 0}">
-       <c:forEach var = "i" begin = "1" end = "${countOfPage}">
-       <form action = "/tax-office/service/filterClientReports"  method="GET" class = page style="float:left">
+	<c:if test = "${countOfPages != 0}">
+       <c:forEach var = "i" begin = "1" end = "${countOfPages}">
+       <form action = "/tax-office/service/report/client/filter"  method="GET" class = page style="float:left">
            <input type="hidden" name="clientId" value="${user.id}"/><br><br>
            <input type="hidden" name="page" value="${i}"/>
-           <input type="hidden" name="date" value="${date}"/>
-           <input type="hidden" name="status" value="${status}"/>
-           <input type="hidden" name="type" value="${type}"/>
+           <input type="hidden" name="date" value="${dto.date}"/>
+           <input type="hidden" name="status" value="${dto.status}"/>
+           <input type="hidden" name="type" value="${dto.type}"/>
            <button type="submit" class="btn btn-link" >${i}</button>
        </form>
        </c:forEach>

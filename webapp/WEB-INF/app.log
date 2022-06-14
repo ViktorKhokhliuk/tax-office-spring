@@ -957,3 +957,936 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 2022-06-12 21:19:15,068 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
 2022-06-12 21:19:15,068 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
 2022-06-12 21:19:15,068 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 13:48:07,430 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 13:48:11,231 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3801 ms
+2022-06-13 13:48:11,264 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 13:48:11,270 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-06-13 13:48:28,401 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 13:48:28,401 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 13:48:28,401 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 13:48:48,124 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-4] Client: tony hector has registered successfully
+2022-06-13 14:24:37,178 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 14:24:40,718 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3532 ms
+2022-06-13 14:24:40,750 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 14:24:40,751 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 1 ms
+2022-06-13 14:24:44,987 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 14:24:44,987 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 14:24:44,987 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 14:25:01,560 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-6] No mapping for GET /tax-office/service/report/report/data
+2022-06-13 14:30:43,118 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 14:30:46,791 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3661 ms
+2022-06-13 14:30:46,823 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 14:30:46,823 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 14:30:47,054 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 14:30:47,054 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 14:30:47,054 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 14:31:13,875 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-6] No mapping for GET /tax-office/service/report/user/report.jsp
+2022-06-13 14:31:52,718 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-7] No mapping for GET /tax-office/service/report/user/report.jsp
+2022-06-13 14:34:53,602 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 14:34:53,602 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 14:34:53,602 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 14:35:50,883 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] Session created
+2022-06-13 14:35:50,883 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] Set session locales --> [en, ru]
+2022-06-13 14:35:50,883 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-7] Set session selected locale --> en
+2022-06-13 14:36:19,311 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /tax-office/service/report/user/report.jsp
+2022-06-13 14:36:33,970 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 14:36:37,550 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3569 ms
+2022-06-13 14:36:37,581 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 14:36:37,586 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 5 ms
+2022-06-13 14:36:40,803 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 14:36:40,803 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 14:36:40,803 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 14:37:47,119 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Session created
+2022-06-13 14:37:47,119 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session locales --> [en, ru]
+2022-06-13 14:37:47,119 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session selected locale --> en
+2022-06-13 15:02:11,863 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 15:02:15,063 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3190 ms
+2022-06-13 15:02:15,084 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 15:02:15,094 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 10 ms
+2022-06-13 15:02:23,029 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 15:02:23,029 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 15:02:23,029 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 15:02:28,056 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Session created
+2022-06-13 15:02:28,056 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Set session locales --> [en, ru]
+2022-06-13 15:02:28,056 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Set session selected locale --> en
+2022-06-13 15:02:55,395 ERROR o.p.s.t.l.p.JsonParser [http-nio-8080-exec-7] cannot parse json file
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "group" (class org.project.spring.tax_office.logic.entity.report.ReportData), not marked as ignorable (9 known properties: "taxGroup", "person", "taxYear", "monthNumber", "id", "nationality", "activity", "income", "quarter"])
+ at [Source: (File); line: 1, column: 106] (through reference chain: org.project.spring.tax_office.logic.entity.report.ReportData["group"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1989) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:319) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3494) ~[jackson-databind-2.13.1.jar:2.13.1]
+	at org.project.spring.tax_office.logic.parser.JsonParser.parse(JsonParser.java:21) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:39) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:38) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-13 15:04:18,078 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-10] File valid.json has uploaded successfully!
+2022-06-13 16:01:27,763 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 16:01:31,304 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3531 ms
+2022-06-13 16:01:31,347 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 16:01:31,347 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 16:01:37,192 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 16:01:37,192 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 16:01:37,192 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 16:01:49,868 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-5] Set session selected locale --> ru
+2022-06-13 16:01:52,247 INFO o.p.s.t.l.c.u.UserController [http-nio-8080-exec-7] Set session selected locale --> en
+2022-06-13 16:08:27,455 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-7] File valid.json has uploaded successfully!
+2022-06-13 16:08:30,792 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-9] File valid.json has uploaded successfully!
+2022-06-13 16:08:34,294 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-10] File valid.json has uploaded successfully!
+2022-06-13 16:08:39,097 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.json has uploaded successfully!
+2022-06-13 16:08:42,996 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-5] File valid.json has uploaded successfully!
+2022-06-13 16:08:46,877 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-7] File valid.json has uploaded successfully!
+2022-06-13 16:08:57,290 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-10] File valid.json has uploaded successfully!
+2022-06-13 16:22:02,508 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 16:22:04,140 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1627 ms
+2022-06-13 16:22:04,156 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 16:22:04,156 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 16:22:13,356 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2022-06-13 16:22:13,356 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2022-06-13 16:22:13,356 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2022-06-13 16:29:51,841 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 16:29:53,260 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1408 ms
+2022-06-13 16:29:53,270 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 16:29:53,281 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 11 ms
+2022-06-13 16:29:57,783 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 16:29:57,783 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 16:29:57,783 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 16:30:35,724 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 16:30:37,324 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1600 ms
+2022-06-13 16:30:37,345 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 16:30:37,345 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 16:30:40,102 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 16:30:40,102 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 16:30:40,102 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 17:34:55,946 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 17:34:59,213 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3251 ms
+2022-06-13 17:34:59,245 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 17:34:59,260 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-13 17:35:04,281 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 17:35:04,281 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 17:35:04,281 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 17:38:34,874 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 17:38:38,432 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3543 ms
+2022-06-13 17:38:38,463 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 17:38:38,463 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 17:38:43,540 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 17:38:43,540 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 17:38:43,540 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 17:40:39,243 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-2] No mapping for GET /tax-office/service/filterClientReports
+2022-06-13 18:27:25,357 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:27:29,066 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3694 ms
+2022-06-13 18:27:29,097 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:27:29,097 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 18:27:30,787 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 18:27:30,787 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 18:27:30,787 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 18:30:10,954 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Session created
+2022-06-13 18:30:10,954 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session locales --> [en, ru]
+2022-06-13 18:30:10,954 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-9] Set session selected locale --> en
+2022-06-13 18:39:59,971 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:40:03,464 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3477 ms
+2022-06-13 18:40:03,495 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:40:03,511 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-13 18:41:02,637 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 18:41:02,637 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 18:41:02,637 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 18:41:12,840 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-3] File valid.json has uploaded successfully!
+2022-06-13 18:43:33,938 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:43:37,722 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3769 ms
+2022-06-13 18:43:37,768 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:43:37,768 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 18:43:38,050 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 18:43:38,050 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 18:43:38,050 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 18:43:50,969 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-5] File valid.json has uploaded successfully!
+2022-06-13 18:44:30,788 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:44:34,447 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3651 ms
+2022-06-13 18:44:34,479 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:44:34,494 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-13 18:44:52,343 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 18:44:52,343 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 18:44:52,343 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 18:45:05,956 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-6] File valid.json has uploaded successfully!
+2022-06-13 18:50:57,497 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:51:01,263 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3734 ms
+2022-06-13 18:51:01,295 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:51:01,303 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-06-13 18:51:01,471 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 18:51:01,471 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 18:51:01,471 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 18:51:16,282 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-5] File valid.json has uploaded successfully!
+2022-06-13 18:58:36,117 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:58:39,657 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3524 ms
+2022-06-13 18:58:39,689 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:58:39,689 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 18:58:39,858 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 18:58:39,858 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-13 18:58:39,858 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-13 18:58:39,858 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 18:58:39,858 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 18:58:39,858 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-13 18:58:52,984 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-5] File valid.json has uploaded successfully!
+2022-06-13 18:59:42,958 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-13 18:59:46,527 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3554 ms
+2022-06-13 18:59:46,558 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-13 18:59:46,558 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-13 18:59:57,348 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-13 18:59:57,348 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-13 18:59:57,348 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-13 19:00:11,553 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.json has uploaded successfully!
+2022-06-14 14:00:57,232 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 14:00:58,935 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1698 ms
+2022-06-14 14:00:58,950 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 14:00:58,953 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 2 ms
+2022-06-14 14:01:16,897 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 14:01:16,898 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 14:01:16,898 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 14:02:06,271 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-10] No mapping for GET /tax-office/service/filterAllReports
+2022-06-14 14:02:11,080 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-1] No mapping for GET /tax-office/service/filterAllReports
+2022-06-14 14:02:15,851 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-2] No mapping for GET /tax-office/service/filterAllReports
+2022-06-14 14:04:49,476 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-2] No mapping for GET /tax-office/service/toHome
+2022-06-14 14:05:14,154 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-3] No mapping for GET /tax-office/service/toHome
+2022-06-14 14:46:23,198 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 14:46:26,734 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3528 ms
+2022-06-14 14:46:26,767 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 14:46:26,772 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 4 ms
+2022-06-14 14:47:45,661 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 14:47:45,661 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 14:47:45,661 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 15:18:22,971 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 15:18:27,891 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4904 ms
+2022-06-14 15:18:27,931 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 15:18:27,939 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-06-14 15:18:28,300 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 15:18:28,300 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 15:18:28,308 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 15:32:42,534 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 15:32:46,078 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3505 ms
+2022-06-14 15:32:46,110 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 15:32:46,125 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-14 15:33:33,670 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2022-06-14 15:33:33,670 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2022-06-14 15:33:33,670 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2022-06-14 15:37:46,409 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 15:37:49,932 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3523 ms
+2022-06-14 15:37:49,964 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 15:37:49,980 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-14 15:38:15,707 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 15:38:15,708 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 15:38:15,708 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 16:02:52,552 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 16:02:56,451 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3884 ms
+2022-06-14 16:02:56,499 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 16:02:56,499 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 16:02:56,719 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 16:02:56,719 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 16:02:56,719 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 16:03:19,403 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'message' for method parameter type String is not present]
+2022-06-14 17:00:05,286 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 17:00:12,607 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 7313 ms
+2022-06-14 17:00:12,735 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 17:00:12,743 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-06-14 17:00:13,151 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Session created
+2022-06-14 17:00:13,151 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Set session locales --> [en, ru]
+2022-06-14 17:00:13,151 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-8] Set session selected locale --> en
+2022-06-14 17:00:43,434 WARN o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'message' for method parameter type String is not present]
+2022-06-14 17:03:24,698 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 17:03:32,144 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 7430 ms
+2022-06-14 17:03:32,316 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 17:03:32,332 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-14 17:03:36,504 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Session created
+2022-06-14 17:03:36,504 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session locales --> [en, ru]
+2022-06-14 17:03:36,504 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-3] Set session selected locale --> en
+2022-06-14 17:26:39,285 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 17:26:42,983 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3698 ms
+2022-06-14 17:26:43,030 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 17:26:43,030 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 17:26:47,708 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 17:26:47,724 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 17:26:47,724 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 18:26:29,634 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 18:26:31,291 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1657 ms
+2022-06-14 18:26:31,315 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 18:26:31,315 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 18:26:33,802 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 18:26:33,802 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 18:26:33,803 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 19:02:22,054 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 19:02:25,640 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3571 ms
+2022-06-14 19:02:25,671 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 19:02:25,671 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 19:02:50,847 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 19:02:50,847 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 19:02:50,847 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 19:08:09,303 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Session created
+2022-06-14 19:08:09,303 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Set session locales --> [en, ru]
+2022-06-14 19:08:09,303 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-4] Set session selected locale --> en
+2022-06-14 19:19:18,330 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 19:19:21,961 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3615 ms
+2022-06-14 19:19:22,001 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 19:19:22,001 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 19:19:52,005 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 19:19:52,005 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 19:19:52,005 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 19:20:54,843 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.xml has uploaded successfully!
+2022-06-14 19:22:46,067 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-2] cannot parse xml file
+java.lang.NullPointerException: Cannot invoke "org.w3c.dom.Node.getTextContent()" because "node" is null
+	at org.project.spring.tax_office.logic.parser.XmlParser.getTextContext(XmlParser.java:57) ~[classes/:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.buildReportData(XmlParser.java:51) ~[classes/:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:31) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 19:24:48,627 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-6] File valid — копия.json has uploaded successfully!
+2022-06-14 19:26:00,897 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-3] File valid — копия.json has uploaded successfully!
+2022-06-14 19:32:47,675 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-1] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 19:33:50,060 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-3] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 19:34:55,996 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-5] cannot parse xml file
+java.lang.NullPointerException: Cannot invoke "org.w3c.dom.Node.getTextContent()" because "node" is null
+	at org.project.spring.tax_office.logic.parser.XmlParser.getTextContext(XmlParser.java:57) ~[classes/:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.buildReportData(XmlParser.java:45) ~[classes/:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:31) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 19:37:11,453 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 19:37:15,089 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3620 ms
+2022-06-14 19:37:15,120 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 19:37:15,120 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 19:37:59,750 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 19:37:59,765 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 19:37:59,765 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 19:38:17,607 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-4] File valid.xml has uploaded successfully!
+2022-06-14 19:38:30,875 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-6] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 19:43:16,023 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 19:43:19,560 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3537 ms
+2022-06-14 19:43:19,592 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 19:43:19,592 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 19:44:45,941 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 19:44:45,941 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 19:44:45,941 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 19:46:33,513 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-8] File valid — копия.json has uploaded successfully!
+2022-06-14 20:40:27,878 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 20:40:31,734 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3856 ms
+2022-06-14 20:40:31,766 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 20:40:31,781 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-14 20:41:33,371 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 20:41:33,371 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 20:41:33,371 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 20:42:00,690 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-5] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService$$FastClassBySpringCGLIB$$d4fc62fc.invoke(<generated>) [classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) [spring-aop-5.3.19.jar:5.3.19]
+	at org.project.spring.tax_office.logic.service.ReportService$$EnhancerBySpringCGLIB$$17489dd5.uploadReport(<generated>) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 20:42:53,040 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-7] File valid — копия.json has uploaded successfully!
+2022-06-14 20:43:45,576 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 20:43:45,576 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 20:43:45,576 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 20:44:05,920 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-6] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService$$FastClassBySpringCGLIB$$d4fc62fc.invoke(<generated>) [classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) [spring-aop-5.3.19.jar:5.3.19]
+	at org.project.spring.tax_office.logic.service.ReportService$$EnhancerBySpringCGLIB$$17489dd5.uploadReport(<generated>) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 20:44:34,228 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-9] File valid.xml has uploaded successfully!
+2022-06-14 20:45:25,862 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-6] File valid — копия.json has uploaded successfully!
+2022-06-14 20:48:14,643 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 20:48:18,478 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3835 ms
+2022-06-14 20:48:18,510 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 20:48:18,525 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-14 20:48:22,729 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 20:48:22,729 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 20:48:22,729 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 20:49:03,593 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-8] File valid — копия.json has uploaded successfully!
+2022-06-14 20:51:48,922 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 20:51:52,779 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3841 ms
+2022-06-14 20:51:52,810 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 20:51:52,810 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 20:51:58,831 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-14 20:51:58,831 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-14 20:51:58,831 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-14 20:53:06,071 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-9] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService$$FastClassBySpringCGLIB$$d4fc62fc.invoke(<generated>) [classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) [spring-aop-5.3.19.jar:5.3.19]
+	at org.project.spring.tax_office.logic.service.ReportService$$EnhancerBySpringCGLIB$$17489dd5.uploadReport(<generated>) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 21:03:42,788 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 21:03:46,956 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4168 ms
+2022-06-14 21:03:46,987 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 21:03:46,987 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-14 21:04:15,553 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 21:04:15,561 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 21:04:15,561 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 21:04:52,169 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-6] Client: tony tony has registered successfully
+2022-06-14 21:13:34,175 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 21:13:38,435 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4244 ms
+2022-06-14 21:13:38,460 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 21:13:38,475 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-14 21:13:41,753 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 21:13:41,753 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 21:13:41,753 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 21:13:55,531 INFO o.p.s.t.l.c.c.ClientController [http-nio-8080-exec-4] Client: tony tony has registered successfully
+2022-06-14 21:14:14,535 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-8] File valid.json has uploaded successfully!
+2022-06-14 21:20:04,567 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-14 21:20:08,587 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4020 ms
+2022-06-14 21:20:08,603 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-14 21:20:08,619 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-14 21:20:11,428 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-14 21:20:11,428 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-14 21:20:11,428 INFO o.p.s.t.i.w.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-14 21:20:33,678 ERROR o.p.s.t.l.r.r.ReportRepository [http-nio-8080-exec-8] PreparedStatementCallback; Column 'tax_group' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'tax_group' cannot be null
+2022-06-14 21:21:01,501 ERROR o.p.s.t.l.p.XmlParser [http-nio-8080-exec-1] cannot parse xml file
+java.net.MalformedURLException: unknown protocol: d
+	at java.net.URL.<init>(URL.java:681) ~[?:?]
+	at java.net.URL.<init>(URL.java:569) ~[?:?]
+	at java.net.URL.<init>(URL.java:516) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:650) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178) ~[?:?]
+	at org.project.spring.tax_office.logic.parser.XmlParser.parse(XmlParser.java:29) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService.uploadReport(ReportService.java:42) [classes/:?]
+	at org.project.spring.tax_office.logic.service.ReportService$$FastClassBySpringCGLIB$$d4fc62fc.invoke(<generated>) [classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) [spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) [spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) [spring-aop-5.3.19.jar:5.3.19]
+	at org.project.spring.tax_office.logic.service.ReportService$$EnhancerBySpringCGLIB$$609d615f.uploadReport(<generated>) [classes/:?]
+	at org.project.spring.tax_office.logic.controller.report.ReportUploadController.uploadReport(ReportUploadController.java:39) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) [spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.encoding.EncodingFilter.doFilter(EncodingFilter.java:25) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.project.spring.tax_office.infra.web.security.SecurityFilter.doFilter(SecurityFilter.java:58) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-06-14 21:21:13,700 INFO o.p.s.t.l.c.r.ReportUploadController [http-nio-8080-exec-5] File valid.xml has uploaded successfully!

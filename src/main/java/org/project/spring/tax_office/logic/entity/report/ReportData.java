@@ -15,7 +15,7 @@ public class ReportData {
     private String taxYear;
     private Integer quarter;
     private Integer monthNumber;
-    private String group;
+    private String taxGroup;
     private String activity;
     private String income;
 

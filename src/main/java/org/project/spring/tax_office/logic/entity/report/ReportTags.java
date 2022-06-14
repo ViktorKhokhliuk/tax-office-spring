@@ -5,10 +5,10 @@ public enum ReportTags {
     REPORT("report"),
     PERSON("person"),
     NATIONALITY("nationality"),
-    YEAR("year"),
+    YEAR("taxYear"),
     QUARTER("quarter"),
-    MONTH("month"),
-    GROUP("group"),
+    MONTH("monthNumber"),
+    GROUP("taxGroup"),
     ACTIVITY("activity"),
     INCOME("income");
 

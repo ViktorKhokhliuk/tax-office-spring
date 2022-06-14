@@ -13,12 +13,20 @@
 	crossorigin="anonymous">
 </head>
     <body>
+    <script>
+        function close_window() {
+          if (confirm("Close Window?")) {
+            close();
+          }
+        }
+        </script>
     <p>
+    <h3 style="color:green" class="text-center">${message}</h3>
 <div class="container">
   <h1><lan:print message="edit_form"/>:</h1>
   <div class="card">
    <div class="card-body">
-    <form action="/tax-office/service/saveReportChanges" method="POST">
+    <form action="/tax-office/service/report/edit" method="POST">
 
      <div class="form-group row">
       <label for="name" class="col-sm-2 col-form-label"><lan:print message="name"/></label>
@@ -37,9 +45,9 @@
      </div>
 
      <div class=" form-group row">
-      <label for="itn" class="col-sm-2 col-form-label"><lan:print message="itn"/></label>
+      <label for="tin" class="col-sm-2 col-form-label"><lan:print message="tin"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${user.itn}" class="form-control" name="itn"
+       <input type="text" value = "${user.tin}" class="form-control" name="tin"
         readonly disabled>
       </div>
      </div>
@@ -47,7 +55,7 @@
      <div class="form-group row">
       <label for="person" class="col-sm-2 col-form-label"><lan:print message="person"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.person}" class="form-control" name="person"
+       <input type="text" value = "${reportData.person}" class="form-control" name="person"
         required pattern = "(natural){1}|(legal){1}|(физическое){1}|(юридическое){1}"
         title="<lan:print message="person_pattern"/>">
       </div>
@@ -56,7 +64,7 @@
      <div class="form-group row">
       <label for="nationality" class="col-sm-2 col-form-label"><lan:print message="nationality"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.nationality}" maxlength="20" class="form-control" name="nationality"
+       <input type="text" value = "${reportData.nationality}" maxlength="20" class="form-control" name="nationality"
          required pattern = "[A-Za-z]{2,30}|[А-Яа-яЁё]{2,30}"
          title="<lan:print message="nationality_pattern"/>">
       </div>
@@ -65,7 +73,7 @@
      <div class="form-group row">
       <label for="year" class="col-sm-2 col-form-label"><lan:print message="year"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.year}" class="form-control" name="year"
+       <input type="text" value = "${reportData.taxYear}" class="form-control" name="taxYear"
         required  required pattern = "^[1-9][0-9]{3}$"
         title="<lan:print message="year_pattern"/>">
       </div>
@@ -74,7 +82,7 @@
      <div class="form-group row">
       <label for="quarter" class="col-sm-2 col-form-label"><lan:print message="quarter"/></label>
       <div class="col-sm-7">
-       <input type="number" min = "1" max = "4" value = "${reportParameters.quarter}" class="form-control" name="quarter"
+       <input type="number" min = "1" max = "4" value = "${reportData.quarter}" class="form-control" name="quarter"
         required >
       </div>
      </div>
@@ -82,7 +90,7 @@
      <div class="form-group row">
       <label for="month" class="col-sm-2 col-form-label"><lan:print message="month"/></label>
       <div class="col-sm-7">
-       <input type="number" min = "1" max = "12" value = "${reportParameters.month}" class="form-control" name="month"
+       <input type="number" min = "1" max = "12" value = "${reportData.monthNumber}" class="form-control" name="monthNumber"
         required >
       </div>
      </div>
@@ -90,7 +98,7 @@
      <div class="form-group row">
       <label for="group" class="col-sm-2 col-form-label"><lan:print message="group"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.group}" class="form-control" name="group"
+       <input type="text" value = "${reportData.taxGroup}" class="form-control" name="taxGroup"
         required pattern = "(I){1}|(II){1}|(III){1}|(IV){1}"
         title="<lan:print message="group_pattern"/>">
       </div>
@@ -99,7 +107,7 @@
      <div class=" form-group row">
       <label for="activity" class="col-sm-2 col-form-label"><lan:print message="activity"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.activity}" maxlength="30" class="form-control" name="activity"
+       <input type="text" value = "${reportData.activity}" maxlength="30" class="form-control" name="activity"
          required pattern = "[A-Za-z]{2,30}|[А-Яа-яЁё]{2,30}"
          title="<lan:print message="activity_pattern"/>">
       </div>
@@ -108,22 +116,16 @@
      <div class="form-group row">
       <label for="income" class="col-sm-2 col-form-label"><lan:print message="income"/></label>
       <div class="col-sm-7">
-       <input type="text" value = "${reportParameters.income}"  maxlength="20" class="form-control" name="income"
+       <input type="text" value = "${reportData.income}"  maxlength="20" class="form-control" name="income"
         required pattern = "[0-9]*"
         title="<lan:print message="income_pattern"/>">
       </div>
      </div>
-     <input type="hidden" name="id" value="${dto.id}"/>
-     <input type="hidden" name="clientId" value="${dto.clientId}"/>
-     <input type="hidden" name="page" value="${dto.page}"/>
-     <input type="hidden" name="title" value="${dto.title}"/>
-     <input type="hidden" name="date" value="${dto.date}"/>
-     <input type="hidden" name="statusFilter" value="${dto.statusFilter}"/>
-     <input type="hidden" name="type" value="${dto.type}"/>
+     <input type="hidden" name="id" value="${reportData.id}"/>
      <button type="submit" class="btn btn-primary"><lan:print message="edit"/></button>
     </form>
     <br>
-    <input type="button" class="btn btn-secondary" onclick="history.back();" value=<lan:print message="back"/>>
+    <input type="button" class="btn btn-secondary" onclick="close_window();return false;" value=<lan:print message="back"/>>
    </div>
   </div>
  </div>

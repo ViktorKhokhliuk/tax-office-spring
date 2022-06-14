@@ -46,7 +46,7 @@ public class XmlParser implements Parser {
         reportData.setPerson(getTextContext(root, ReportTags.PERSON.getValue()));
         reportData.setQuarter(Integer.valueOf(getTextContext(root, ReportTags.QUARTER.getValue())));
         reportData.setMonthNumber(Integer.valueOf(getTextContext(root, ReportTags.MONTH.getValue())));
-        reportData.setGroup(getTextContext(root, ReportTags.GROUP.getValue()));
+        reportData.setTaxGroup(getTextContext(root, ReportTags.GROUP.getValue()));
         reportData.setActivity(getTextContext(root, ReportTags.ACTIVITY.getValue()));
         reportData.setIncome(getTextContext(root, ReportTags.INCOME.getValue()));
         return reportData;

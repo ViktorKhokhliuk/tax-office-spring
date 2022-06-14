@@ -2,7 +2,10 @@ package org.project.spring.tax_office.logic.service;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.io.FileUtils;
+import org.project.spring.tax_office.logic.entity.dto.ClientReportFilterDto;
 import org.project.spring.tax_office.logic.entity.dto.ReportCreateDto;
+import org.project.spring.tax_office.logic.entity.dto.ReportFilterDto;
+import org.project.spring.tax_office.logic.entity.dto.ReportUpdateDto;
 import org.project.spring.tax_office.logic.entity.report.Report;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.project.spring.tax_office.logic.exception.ReportException;
@@ -22,7 +25,7 @@ public class ReportService {
     private final ReportRepository reportRepository;
     private final Map<String, Parser> parsers;
 
-    @Transactional(rollbackFor = Throwable.class)
+    @Transactional
     public Report uploadReport(ReportCreateDto reportCreateDto, File file) {
         String fileExtension = getFileExtension(reportCreateDto.getTitle());
 
@@ -46,9 +49,23 @@ public class ReportService {
         return fileName.substring(index);
     }
 
-    public List<Report> getAll(int page) {
+    public List<Report> getAllReports(int page) {
         int index = getIndex(page);
-        return reportRepository.getAll(index);
+        return reportRepository.getAllReports(index);
+    }
+
+    public double getCountOfPagesForAll() {
+        return getCountOfPages(reportRepository.getCountOfFieldsForAllReports());
+    }
+
+    public List<Report> getAllReportsByFilter(ReportFilterDto dto) {
+        int index = getIndex(dto.getPage());
+        return reportRepository.getAllReportsByFilter(dto, index);
+    }
+
+    public double getCountOfPagesForAllReportsByFilter(ReportFilterDto dto) {
+        Double countOfFields = reportRepository.getCountOfFieldsForAllReportsByFilter(dto);
+        return getCountOfPages(countOfFields);
     }
 
     public List<Report> getClientReports(Long clientId, int page) {
@@ -56,14 +73,29 @@ public class ReportService {
         return reportRepository.getClientReports(clientId, index);
     }
 
-    public double getCountOfPagesForAll() {
-        return getCountOfPages(reportRepository.getCountOfFieldsForAll());
-    }
-
     public double getCountOfPagesForClientReports(Long clientId) {
         return getCountOfPages(reportRepository.getCountOfFieldsForClientReports(clientId));
     }
 
+    public List<Report> getClientReportsByFilter(ClientReportFilterDto dto) {
+        int index = getIndex(dto.getPage());
+        return reportRepository.getClientReportsByFilter(dto, index);
+    }
+
+    public double getCountOfPagesForClientReportsByFilter(ClientReportFilterDto dto) {
+        return getCountOfPages(reportRepository.getCountOfFieldsForClientReportsByFilter(dto));
+    }
+
+    public ReportData getReportData(Long reportId) {
+        return reportRepository.getReportData(reportId).orElseThrow(() -> new ReportException("cannot find report data"));
+    }
+
+    public ReportData editReportData(ReportData editedReportData) {
+        return reportRepository.updateReportData(editedReportData);
+    }
+    public ReportUpdateDto updateReportStatus(ReportUpdateDto dto) {
+        return reportRepository.updateReportStatus(dto);
+    }
     private double getCountOfPages(double countOfField) {
         return Math.ceil(countOfField / 5);
     }

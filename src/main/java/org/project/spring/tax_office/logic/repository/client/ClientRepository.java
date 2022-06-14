@@ -13,7 +13,6 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
@@ -23,21 +22,23 @@ public class ClientRepository {
     private final ClientRowMapper clientRowMapper;
 
     private static final String SELECT_CLIENTS_BY_SEARCH_PARAMETERS = """
-                                select * from client join user on user.id=client.id
-                                 where name like ? and surname like ? and tin like ?
-                                 limit ?, 5;
-                                """;
+            select * from client join user on user.id=client.id
+             where name like concat('%',?,'%') and surname like concat('%',?,'%')
+             and tin like concat('%',?,'%') limit ?, 5;
+            """;
     private static final String SELECT_COUNT_FOR_SEARCH_PARAMETERS = """
-                                select count(*) from client join user on user.id=client.id
-                                 where name like ? and surname like ? and tin like ?;
-                                """;
+            select count(*) from client join user on user.id=client.id
+             where name like concat('%',?,'%') and surname like concat('%',?,'%')
+             and tin like concat('%',?,'%');
+            """;
     private static final String INSERT_USER = "INSERT INTO user (login,password,role) VALUES (?,?,?);";
     private static final String INSERT_CLIENT = "INSERT INTO client (id,name,surname,tin) VALUES (?,?,?,?);";
     private static final String SELECT_ALL_CLIENTS = "select * from client join user on user.id=client.id limit ?, 5;";
-    private static final String DELETE_REPORTS_BY_CLIENT_ID = "delete from report where clientId = ?;";
-    private static final String DELETE_CLIENT_BY_ID = "delete from client where id = ?;";
+    private static final String SELECT_ALL_CLIENTS_NO_LIMIT = "select * from client join user on user.id=client.id;";
     private static final String DELETE_USER_BY_ID = "delete from user where id = ?;";
     private static final String SELECT_COUNT = "select count(*) from client join user on user.id=client.id;";
+    private static final String DELETE_REPORTS_BY_CLIENT_ID = "delete from report where clientId = ?;";
+    private static final String DELETE_CLIENT_BY_ID = "delete from client where id = ?;";
 
 
     public Client insertClient(ClientRegistrationDto dto) {
@@ -76,22 +77,21 @@ public class ClientRepository {
         return jdbcTemplate.query(SELECT_ALL_CLIENTS, clientRowMapper, index);
     }
 
-    public List<Client> getClientsBySearchParameters(ClientSearchDto clientSearchDto, int index) {
-        String name = "%" + Optional.ofNullable(clientSearchDto.getName()).orElse("") + "%";
-        String surname = "%" + Optional.ofNullable(clientSearchDto.getSurname()).orElse("") + "%";
-        String tin = "%" + Optional.ofNullable(clientSearchDto.getTin()).orElse("") + "%";
-
-        return jdbcTemplate.query(SELECT_CLIENTS_BY_SEARCH_PARAMETERS, clientRowMapper, name, surname, tin, index);
+    public List<Client> getAllClientsNoLimit() {
+        return jdbcTemplate.query(SELECT_ALL_CLIENTS_NO_LIMIT, clientRowMapper);
     }
 
     public Double getCountOfFieldsForAll() {
         return jdbcTemplate.queryForObject(SELECT_COUNT, Double.class);
     }
 
+    public List<Client> getClientsBySearchParameters(ClientSearchDto clientSearchDto, int index) {
+        return jdbcTemplate.query(SELECT_CLIENTS_BY_SEARCH_PARAMETERS, clientRowMapper,
+                clientSearchDto.getName(), clientSearchDto.getSurname(), clientSearchDto.getTin(), index);
+    }
+
     public Double getCountOfFieldsForSearchParameters(ClientSearchDto clientSearchDto) {
-        String name = "%" + Optional.ofNullable(clientSearchDto.getName()).orElse("") + "%";
-        String surname = "%" + Optional.ofNullable(clientSearchDto.getSurname()).orElse("") + "%";
-        String tin = "%" + Optional.ofNullable(clientSearchDto.getTin()).orElse("") + "%";
-        return jdbcTemplate.queryForObject(SELECT_COUNT_FOR_SEARCH_PARAMETERS,Double.class, name, surname, tin);
+        return jdbcTemplate.queryForObject(SELECT_COUNT_FOR_SEARCH_PARAMETERS, Double.class,
+                clientSearchDto.getName(), clientSearchDto.getSurname(), clientSearchDto.getTin());
     }
 }

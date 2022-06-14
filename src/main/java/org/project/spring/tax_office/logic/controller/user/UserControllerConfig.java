@@ -10,7 +10,7 @@ import java.util.Map;
 public class UserControllerConfig {
 
     @Bean
-    public Map<UserRole, String> userViews() {
+    public Map<UserRole, String> userHomePageViews() {
         return Map.of(UserRole.INSPECTOR, "/inspector/homePage.jsp", UserRole.CLIENT, "/client/homePage.jsp");
     }
 }

@@ -18,10 +18,10 @@ public class ReportDataResultSetExtractor implements ResultSetExtractor<Optional
             long id = resultSet.getLong("id");
             String person = resultSet.getString("person");
             String nationality = resultSet.getString("nationality");
-            String year = resultSet.getString("year");
+            String year = resultSet.getString("tax_year");
             int quarter = resultSet.getInt("quarter");
             int monthNumber = resultSet.getInt("month_number");
-            String group = resultSet.getString("group");
+            String group = resultSet.getString("tax_group");
             String activity = resultSet.getString("activity");
             String income = resultSet.getString("income");
             return Optional.of(new ReportData(id, person, nationality, year, quarter, monthNumber, group, activity, income));
