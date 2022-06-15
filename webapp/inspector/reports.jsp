@@ -83,39 +83,29 @@
                  <input type="text" name="surname" placeholder="<lan:print message="enter_surname"/>"/>
                  <label for="name"><lan:print message="tin"/>:</label>
                  <input type="text" name="tin"= placeholder="<lan:print message="enter_tin"/>"/>
-                 <input type="hidden" name="page" value="1"/>
-                 <input type="hidden" name="status" value="${dto.status}"/>
-                 <input type="hidden" name="type" value="${dto.type}"/>
-                 <input type="hidden" name="date" value="${dto.date}"/>
-                 <button type="submit" class="btn btn-outline-dark"><lan:print message="search"/></button>
               </div>
-       </form>
-      <form action = "/tax-office/service/report/filter"  method="GET" class="filter" align = "right">
-      <div class="form-group">
-         <label for="name"><lan:print message="choose_date"/>:</label>
-           <input type="date" name="date"
-            min="01-01-2010" max="12-31-2100"/>
-         <label for="name"><lan:print message="choose_status"/>:</label>
-            <select name="status">
-              <option value=""><lan:print message="status"/></option>
-              <option value="SUBMITTED"><lan:print message="submitted"/></option>
-              <option value="ACCEPTED"><lan:print message="accepted"/></option>
-              <option value="UNACCEPTED"><lan:print message="unaccepted"/></option>
-              <option value="EDITED"><lan:print message="edited"/></option>
-            </select>
-         <label for="name"><lan:print message="choose_type"/>:</label>
-            <select name="type">
-              <option value=""><lan:print message="type"/></option>
-              <option value="income statement"><lan:print message="income_statement"/></option>
-              <option value="income tax"><lan:print message="income_tax"/></option>
-              <option value="single tax"><lan:print message="single_tax"/></option>
-            </select>
-            <input type="hidden" name="name" value="${dto.name}"/>
-            <input type="hidden" name="surname" value="${dto.surname}"/>
-            <input type="hidden" name="tin" value="${dto.tin}"/>
-            <input type="hidden" name="page" value="1"/>
-         <button type="submit" class="btn btn-outline-dark"><lan:print message="filter"/></button>
-      </div>
+              <div class="form-group">
+                <label for="name"><lan:print message="choose_date"/>:</label>
+                  <input type="date" name="date"
+                    min="01-01-2010" max="12-31-2100"/>
+                <label for="name"><lan:print message="choose_status"/>:</label>
+                   <select name="status">
+                     <option value=""><lan:print message="status"/></option>
+                     <option value="SUBMITTED"><lan:print message="submitted"/></option>
+                     <option value="ACCEPTED"><lan:print message="accepted"/></option>
+                     <option value="UNACCEPTED"><lan:print message="unaccepted"/></option>
+                     <option value="EDITED"><lan:print message="edited"/></option>
+                   </select>
+                <label for="name"><lan:print message="choose_type"/>:</label>
+                   <select name="type">
+                     <option value=""><lan:print message="type"/></option>
+                     <option value="income statement"><lan:print message="income_statement"/></option>
+                     <option value="income tax"><lan:print message="income_tax"/></option>
+                     <option value="single tax"><lan:print message="single_tax"/></option>
+                   </select>
+                <input type="hidden" name="page" value="1"/>
+                <button type="submit" class="btn btn-outline-dark"><lan:print message="filter"/></button>
+              </div>
       </form>
       <form action = "/tax-office/service/report"  method="GET" class = "reports">
           <input type="hidden" name="page" value="1"/>
@@ -143,7 +133,7 @@
 						<tr>
 						    <td class="counterCell"></td>
 							<td><a href="/tax-office/service/report/data?id=${report.id}" target="_blank">${report.title}</a></td>
-							<td><a href="/tax-office/service/report/client?clientId=${client.id}&page=1&clientLogin=${client.login}">${client.name} ${client.surname} (${client.login})</td>
+							<td><a href="/tax-office/service/report/client?clientId=${client.id}&page=1&clientFullName=${client.name} ${client.surname}">${client.name} ${client.surname} (${client.login})</td>
 							<td>${client.tin}</td>
 							<td>${report.date}</td>
 							<td>${report.type}</td>
@@ -166,22 +156,6 @@
                                       <input type="hidden" name="tin" value="${dto.tin}"/>
                                       <input type="hidden" name="page" value="${page}"/>
                                       <button type="submit" class="btn btn-outline-dark"><lan:print message="accept"/></button>
-                                  </form>
-                                  <a href="upload/id${client.id}/${report.title}" download >
-                                      <button  class="btn btn-outline-primary"><lan:print message="download"/></button>
-                                  </a>
-                                  <form action="/tax-office/service/deleteReportById" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
-                                      <input type="hidden" name="id" value="${report.id}"/>
-                                      <input type="hidden" name="clientId" value="${client.id}"/>
-                                      <input type="hidden" name="title" value="${report.title}"/>
-                                      <input type="hidden" name="date" value="${date}"/>
-                                      <input type="hidden" name="statusFilter" value="${status}"/>
-                                      <input type="hidden" name="type" value="${type}"/>
-                                      <input type="hidden" name="name" value="${name}"/>
-                                      <input type="hidden" name="surname" value="${surname}"/>
-                                      <input type="hidden" name="tin" value="${tin}"/>
-                                      <input type="hidden" name="page" value="${page}"/>
-                                      <button type="submit" class="btn btn-outline-danger"><lan:print message="delete"/></button>
                                   </form>
 							</td>
 						</tr>

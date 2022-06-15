@@ -29,6 +29,7 @@ pageEncoding="UTF-8" isELIgnored="false" %>
                 </form>
 		</nav>
 	</header>
+	<h3 style="color:green" class="text-center">${message}</h3>
  <div class="container">
   <h1><lan:print message="please_sign_in"/>:</h1>
   <div class="card">

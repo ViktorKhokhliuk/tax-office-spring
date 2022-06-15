@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.controller.report;
+package org.project.spring.tax_office.infra.config.app;
 
 import org.project.spring.tax_office.logic.entity.user.UserRole;
 import org.springframework.context.annotation.Bean;

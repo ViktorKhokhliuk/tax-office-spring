@@ -5,7 +5,7 @@ import org.project.spring.tax_office.logic.entity.dto.ClientRegistrationDto;
 import org.project.spring.tax_office.logic.entity.dto.ClientSearchDto;
 import org.project.spring.tax_office.logic.entity.user.Client;
 import org.project.spring.tax_office.logic.entity.user.User;
-import org.project.spring.tax_office.logic.repository.client.ClientRepository;
+import org.project.spring.tax_office.logic.repository.ClientRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,7 +24,7 @@ public class ClientService {
         return clientRepository.insertClient(clientRegistrationDto);
     }
 
-    public boolean deleteById(Long id) {
+    public int deleteById(Long id) {
         return clientRepository.deleteById(id);
     }
 

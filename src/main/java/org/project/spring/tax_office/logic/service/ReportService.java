@@ -10,7 +10,7 @@ import org.project.spring.tax_office.logic.entity.report.Report;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.project.spring.tax_office.logic.exception.ReportException;
 import org.project.spring.tax_office.logic.parser.Parser;
-import org.project.spring.tax_office.logic.repository.report.ReportRepository;
+import org.project.spring.tax_office.logic.repository.ReportRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -47,6 +47,18 @@ public class ReportService {
     private String getFileExtension(String fileName) {
         int index = fileName.lastIndexOf(".");
         return fileName.substring(index);
+    }
+
+    public ReportData editReportData(ReportData editedReportData) {
+        return reportRepository.updateReportData(editedReportData);
+    }
+
+    public ReportUpdateDto updateReportStatus(ReportUpdateDto dto) {
+        return reportRepository.updateReportStatus(dto);
+    }
+
+    public int deleteReportById(Long id) {
+        return reportRepository.deleteReportById(id);
     }
 
     public List<Report> getAllReports(int page) {
@@ -90,12 +102,6 @@ public class ReportService {
         return reportRepository.getReportData(reportId).orElseThrow(() -> new ReportException("cannot find report data"));
     }
 
-    public ReportData editReportData(ReportData editedReportData) {
-        return reportRepository.updateReportData(editedReportData);
-    }
-    public ReportUpdateDto updateReportStatus(ReportUpdateDto dto) {
-        return reportRepository.updateReportStatus(dto);
-    }
     private double getCountOfPages(double countOfField) {
         return Math.ceil(countOfField / 5);
     }
@@ -103,5 +109,4 @@ public class ReportService {
     private int getIndex(int page) {
         return (page - 1) * 5;
     }
-
 }

@@ -4,18 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientReportFilterDto {
+public class ReportDeleteDto {
+    @Getter
+    private Long id;
     @Getter
     private String status;
     @Getter
     private String type;
     @Getter
     private String date;
-    @Getter
-    private String clientFullName;
     @Getter
     private Long clientId;
     @Getter

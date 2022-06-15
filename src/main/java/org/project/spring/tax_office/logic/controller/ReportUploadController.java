@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.controller.report;
+package org.project.spring.tax_office.logic.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -7,10 +7,9 @@ import org.apache.logging.log4j.Level;
 import org.project.spring.tax_office.logic.entity.dto.ReportCreateDto;
 import org.project.spring.tax_office.logic.service.ReportService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -31,14 +30,22 @@ public class ReportUploadController {
                                      @RequestParam("clientId") Long clientId,
                                      @RequestParam("type") String type,
                                      RedirectAttributes redirectAttributes) {
+
         String fileName = multipartFile.getOriginalFilename();
         String path = UPLOAD_DIRECTORY + clientId + fileName;
 
         File file = new File(path);
         multipartFile.transferTo(file);
         reportService.uploadReport(new ReportCreateDto(clientId, fileName, type), file);
-        log.log(Level.INFO, "File " + fileName + " has uploaded successfully!");
-        redirectAttributes.addFlashAttribute("message", "You successfully uploaded " + fileName + "!");
-        return new RedirectView("/tax-office/client/homePage.jsp");
+        log.log(Level.INFO, "File " + fileName + " has been uploaded successfully!");
+        redirectAttributes.addFlashAttribute("message", "You have successfully uploaded " + fileName + " !");
+        return new RedirectView("/tax-office/service/report/upload");
+    }
+
+    @GetMapping()
+    public ModelAndView redirectToHome(@ModelAttribute("message") String message) {
+        ModelAndView modelAndView = new ModelAndView("/client/homePage.jsp");
+        modelAndView.addObject("message", message);
+        return modelAndView;
     }
 }

@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.controller.user;
+package org.project.spring.tax_office.logic.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;

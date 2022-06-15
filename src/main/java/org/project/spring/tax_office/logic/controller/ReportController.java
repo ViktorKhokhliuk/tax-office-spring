@@ -1,8 +1,9 @@
-package org.project.spring.tax_office.logic.controller.report;
+package org.project.spring.tax_office.logic.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.project.spring.tax_office.infra.web.QueryParameterResolver;
 import org.project.spring.tax_office.logic.entity.dto.ClientReportFilterDto;
+import org.project.spring.tax_office.logic.entity.dto.ReportDeleteDto;
 import org.project.spring.tax_office.logic.entity.dto.ReportFilterDto;
 import org.project.spring.tax_office.logic.entity.dto.ReportUpdateDto;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
@@ -56,11 +57,13 @@ public class ReportController {
         User user = (User) request.getSession(false).getAttribute("user");
         int page = Integer.parseInt(request.getParameter("page"));
         Long clientId = Long.valueOf(request.getParameter("clientId"));
+        String clientFullName = request.getParameter("clientFullName");
         ModelAndView modelAndView = new ModelAndView(clientReportsViews.get(user.getUserRole()));
         modelAndView.addObject("reports", reportService.getClientReports(clientId, page));
         modelAndView.addObject("countOfPages", reportService.getCountOfPagesForClientReports(clientId));
         modelAndView.addObject("page", page);
         modelAndView.addObject("clientId", clientId);
+        modelAndView.addObject("clientFullName", clientFullName);
         return modelAndView;
     }
 
@@ -72,6 +75,7 @@ public class ReportController {
         modelAndView.addObject("reports", reportService.getClientReportsByFilter(dto));
         modelAndView.addObject("countOfPages", reportService.getCountOfPagesForClientReportsByFilter(dto));
         modelAndView.addObject("clientId", dto.getClientId());
+        modelAndView.addObject("clientFullName", dto.getClientFullName());
         modelAndView.addObject("page", dto.getPage());
         modelAndView.addObject("dto", dto);
         return modelAndView;
@@ -97,7 +101,7 @@ public class ReportController {
         ReportData editedReportData = queryParameterResolver.getObject(request, ReportData.class);
         reportService.editReportData(editedReportData);
         redirectAttributes.addAttribute("id", editedReportData.getId());
-        redirectAttributes.addFlashAttribute("message", "Report has been successfully edited!");
+        redirectAttributes.addFlashAttribute("message", "Report has been edited successfully!");
         return new RedirectView("/tax-office/service/report/edit");
     }
 
@@ -119,6 +123,19 @@ public class ReportController {
     public RedirectView updateReportStatusFromClientReportsPage(HttpServletRequest request, RedirectAttributes redirectAttributes) {
         ReportUpdateDto dto = queryParameterResolver.getObject(request, ReportUpdateDto.class);
         reportService.updateReportStatus(dto);
+        redirectAttributes.addAttribute("status", dto.getStatus());
+        redirectAttributes.addAttribute("type", dto.getType());
+        redirectAttributes.addAttribute("date", dto.getDate());
+        redirectAttributes.addAttribute("page", dto.getPage());
+        redirectAttributes.addAttribute("clientId", dto.getClientId());
+        redirectAttributes.addAttribute("clientFullName", dto.getClientFullName());
+        return new RedirectView("/tax-office/service/report/client/filter");
+    }
+
+    @PostMapping("/delete")
+    public RedirectView deleteReport(HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        ReportDeleteDto dto = queryParameterResolver.getObject(request, ReportDeleteDto.class);
+        reportService.deleteReportById(dto.getId());
         redirectAttributes.addAttribute("status", dto.getStatus());
         redirectAttributes.addAttribute("type", dto.getType());
         redirectAttributes.addAttribute("date", dto.getDate());

@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.repository.client;
+package org.project.spring.tax_office.logic.repository.rowmapper;
 
 import org.project.spring.tax_office.logic.entity.user.Client;
 import org.springframework.jdbc.core.RowMapper;

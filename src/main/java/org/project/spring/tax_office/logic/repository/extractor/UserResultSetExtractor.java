@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.repository.user;
+package org.project.spring.tax_office.logic.repository.extractor;
 
 import org.project.spring.tax_office.logic.entity.user.Client;
 import org.project.spring.tax_office.logic.entity.user.Inspector;

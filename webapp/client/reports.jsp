@@ -121,17 +121,13 @@
                                   <input type="hidden" name="id" value="${report.id}"/>
                                   <button type="submit" class="btn btn-outline-primary" ><lan:print message="edit"/></button>
                                </form>
-							   <a href="upload/id${user.id}/${report.title}" download >
-							   <button  class="btn btn-outline-primary"><lan:print message="download"/></button>
-							   </a>
-							   <form action="/tax-office/service/deleteReportById" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
+							   <form action="/tax-office/service/report/delete" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
                                   <input type="hidden" name="id" value="${report.id}"/>
                                   <input type="hidden" name="page" value="${page}"/>
                                   <input type="hidden" name="clientId" value="${user.id}"/>
-                                  <input type="hidden" name="title" value="${report.title}"/>
-                                  <input type="hidden" name="date" value="${date}"/>
-                                  <input type="hidden" name="statusFilter" value="${status}"/>
-                                  <input type="hidden" name="type" value="${type}"/>
+                                  <input type="hidden" name="date" value="${dto.date}"/>
+                                  <input type="hidden" name="status" value="${dto.status}"/>
+                                  <input type="hidden" name="type" value="${dto.type}"/>
                                   <button type="submit" class="btn btn-outline-danger"><lan:print message="delete"/></button>
                                </form>
 							</td>

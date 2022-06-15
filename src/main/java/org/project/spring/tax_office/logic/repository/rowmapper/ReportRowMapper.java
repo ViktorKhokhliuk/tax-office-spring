@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.repository.report;
+package org.project.spring.tax_office.logic.repository.rowmapper;
 
 import org.project.spring.tax_office.logic.entity.report.Report;
 import org.springframework.jdbc.core.RowMapper;

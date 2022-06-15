@@ -54,6 +54,8 @@
     </h1>
     <hr>
  <p>
+ <h3 style="color:green" class="text-center">${message}</h3>
+ <p>
           <div class = "box">
              <form method="POST" action="/tax-office/service/report/upload" enctype="multipart/form-data" class="form-horizontal" >
                    <h3><lan:print message="upload_report"/></h3>
@@ -84,6 +86,5 @@
                 <button type="submit" class="btn btn-primary btn-lg"><lan:print message="my_reports"/></button>
              </form>
           </div>
-          ${message}
     </body>
 </html>

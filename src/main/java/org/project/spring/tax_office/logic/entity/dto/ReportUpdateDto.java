@@ -24,6 +24,8 @@ public class ReportUpdateDto {
     @Getter
     private String tin;
     @Getter
+    private String clientFullName;
+    @Getter
     private Long reportId;
     @Getter
     private Long clientId;

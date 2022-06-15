@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.repository.report;
+package org.project.spring.tax_office.logic.repository.extractor;
 
 import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.springframework.dao.DataAccessException;

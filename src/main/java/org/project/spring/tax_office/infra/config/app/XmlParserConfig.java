@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.parser;
+package org.project.spring.tax_office.infra.config.app;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

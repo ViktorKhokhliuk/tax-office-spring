@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.project.spring.tax_office.logic.entity.dto.UserLoginDto;
 import org.project.spring.tax_office.logic.entity.user.User;
 import org.project.spring.tax_office.logic.exception.UserException;
-import org.project.spring.tax_office.logic.repository.user.UserRepository;
+import org.project.spring.tax_office.logic.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service

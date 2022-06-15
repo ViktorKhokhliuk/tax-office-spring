@@ -98,7 +98,7 @@
                                <form action = "/tax-office/service/report/client" method = "GET">
 							     <input type="hidden" name="clientId" value="${client.id}"/>
 							     <input type="hidden" name="page" value="1">
-							     <input type="hidden" name="clientLogin" value="<c:out value='${client.login}'/>"/>
+							     <input type="hidden" name="clientFullName" value="${client.name} ${client.surname}"/>
 							     <button type="submit" class="btn btn-outline-info"><lan:print message="reports"/></button>
 							   </form>
 							   <form action="/tax-office/service/client/delete" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
