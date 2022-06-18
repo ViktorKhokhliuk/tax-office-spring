@@ -2,7 +2,6 @@ package org.project.spring.tax_office.logic.entity.report;
 
 public enum ReportTags {
 
-    REPORT("report"),
     PERSON("person"),
     NATIONALITY("nationality"),
     YEAR("taxYear"),

@@ -19,7 +19,6 @@ public class UserRepository {
 
     public Optional<User> getUserByLogin(String login) {
         return jdbcTemplate.query(SELECT_USER_BY_LOGIN,
-                preparedStatement -> preparedStatement.setString(1, login),
-                userResultSetExtractor);
+                userResultSetExtractor, login);
     }
 }

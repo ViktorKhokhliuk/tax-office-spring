@@ -3,6 +3,7 @@ package org.project.spring.tax_office.logic.entity.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,6 +20,7 @@ public class ReportFilterDto {
     private String surname;
     @Getter
     private String tin;
+    @Setter
     @Getter
     private int page;
 }

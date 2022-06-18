@@ -28,7 +28,7 @@ public class ClientService {
         return clientRepository.deleteById(id);
     }
 
-    public Map<Long, Client> getAllClientsNoLimit() {
+    public Map<Long, Client> getAllClientsNoLimitMap() {
         List<Client> allClientsNoLimit = clientRepository.getAllClientsNoLimit();
         return allClientsNoLimit.stream().collect(Collectors.toMap(User::getId, Function.identity()));
     }
@@ -53,8 +53,8 @@ public class ClientService {
         return getCountOfPages(countOfFields);
     }
 
-    private double getCountOfPages(double countOfField) {
-        return Math.ceil(countOfField / 5);
+    private double getCountOfPages(double countOfFields) {
+        return Math.ceil(countOfFields / 5);
     }
 
     private int getIndex(int page) {

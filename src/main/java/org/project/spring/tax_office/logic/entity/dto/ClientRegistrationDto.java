@@ -1,11 +1,13 @@
 package org.project.spring.tax_office.logic.entity.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.project.spring.tax_office.logic.entity.user.UserRole;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class ClientRegistrationDto {
     private String login;
     private String password;

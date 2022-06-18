@@ -1,0 +1,10 @@
+{
+  "person":"natural",
+  "nationality":"ukrainian",
+  "taxYear":"2022",
+  "quarter":2,
+  "monthNumber":"ten",
+  "taxGroup":"IV",
+  "something":"Programmer",
+  "income":"10000"
+}

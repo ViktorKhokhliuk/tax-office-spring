@@ -1,7 +1,7 @@
 package org.project.spring.tax_office.logic.service;
 
 import lombok.RequiredArgsConstructor;
-import org.project.spring.tax_office.logic.entity.dto.UserLoginDto;
+import org.project.spring.tax_office.logic.entity.dto.UserAuthorizationDto;
 import org.project.spring.tax_office.logic.entity.user.User;
 import org.project.spring.tax_office.logic.exception.UserException;
 import org.project.spring.tax_office.logic.repository.UserRepository;
@@ -13,13 +13,9 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public User getUserByLogin(UserLoginDto userLoginDto) {
-        User user = userRepository.getUserByLogin(userLoginDto.getLogin())
-                .orElseThrow(() -> new UserException("user by login didn't find"));
-
-        if (!user.getPassword().equals(userLoginDto.getPassword())) {
-            throw new UserException("password is incorrect");
-        }
-        return user;
+    public User getUserByLogin(UserAuthorizationDto userLoginDto) {
+        return userRepository.getUserByLogin(userLoginDto.getLogin())
+                .filter(user -> user.getPassword().equals(userLoginDto.getPassword()))
+                .orElseThrow(() -> new UserException("login or password is incorrect"));
     }
 }

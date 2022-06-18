@@ -11,7 +11,6 @@ import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.project.spring.tax_office.logic.entity.report.ReportInfo;
 import org.project.spring.tax_office.logic.entity.report.ReportStatus;
 import org.project.spring.tax_office.logic.exception.ReportException;
-import org.project.spring.tax_office.logic.repository.extractor.ReportDataResultSetExtractor;
 import org.project.spring.tax_office.logic.repository.rowmapper.ReportRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -24,7 +23,6 @@ import java.sql.Statement;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 @Log4j2
 @Repository
@@ -33,7 +31,6 @@ public class ReportRepository {
 
     private final JdbcTemplate jdbcTemplate;
     private final ReportRowMapper reportRowMapper;
-    private final ReportDataResultSetExtractor reportDataResultSetExtractor;
 
     private static final String SELECT_ALL_REPORTS = "select * from report client_id limit ?, 5;";
     private static final String SELECT_COUNT_FOR_ALL_REPORTS = "select count(*) from report";
@@ -41,7 +38,6 @@ public class ReportRepository {
     private static final String SELECT_REPORTS_BY_CLIENT_ID = "select * from report where client_id = ? limit ?, 5;";
     private static final String SELECT_COUNT_FOR_REPORTS_BY_CLIENT = "select count(*) from report where client_id = ?;";
 
-    private static final String SELECT_REPORT_DATA = "select * from report_data where id = ?;";
     private static final String UPDATE_REPORT_STATUS = "update report set status = ?, info = ? where id = ?;";
     private static final String DELETE_REPORT_BY_ID = "delete from report where id = ?";
 
@@ -77,12 +73,6 @@ public class ReportRepository {
             select count(*) from report where status like concat(?,'%')
              and type like concat(?,'%') and date like concat('%',?,'%')
              and client_id = ?;
-            """;
-    private static final String UPDATE_REPORT_AFTER_EDIT = """
-            update report_data join report on report_data.id=report.id
-             set status = ?, info = ?, person = ?, nationality = ?,
-             tax_year = ?, quarter = ?, month_number = ?, tax_group = ?,
-             activity = ?, income = ? where report_data.id = ?;
             """;
 
     public Report insertReport(ReportCreateDto dto, ReportData reportData) {
@@ -121,15 +111,6 @@ public class ReportRepository {
 
         return new Report(reportId, dto.getTitle(), LocalDate.now(), dto.getType(),
                 ReportStatus.SUBMITTED.getTitle(), ReportInfo.PROCESS.getTitle(), dto.getClientId());
-    }
-
-    public ReportData updateReportData(ReportData editedReportData) {
-        jdbcTemplate.update(UPDATE_REPORT_AFTER_EDIT, ReportStatus.EDITED.getTitle(), ReportInfo.EDIT.getTitle(),
-                editedReportData.getPerson(), editedReportData.getNationality(), editedReportData.getTaxYear(),
-                editedReportData.getQuarter(), editedReportData.getMonthNumber(), editedReportData.getTaxGroup(),
-                editedReportData.getActivity(), editedReportData.getIncome(), editedReportData.getId());
-
-        return editedReportData;
     }
 
     public ReportUpdateDto updateReportStatus(ReportUpdateDto dto) {
@@ -175,9 +156,5 @@ public class ReportRepository {
     public Double getCountOfFieldsForClientReportsByFilter(ClientReportFilterDto dto) {
         return jdbcTemplate.queryForObject(SELECT_COUNT_FOR_CLIENT_REPORTS_BY_FILTER,
                 Double.class, dto.getStatus(), dto.getType(), dto.getDate(), dto.getClientId());
-    }
-
-    public Optional<ReportData> getReportData(Long reportId) {
-        return jdbcTemplate.query(SELECT_REPORT_DATA, reportDataResultSetExtractor, reportId);
     }
 }

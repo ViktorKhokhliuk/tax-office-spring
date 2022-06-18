@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding ="UTF-8" ?>
+    <report>
+        <person>natural</person>
+        <nationality>ukrainian</nationality>
+        <taxYear>2022</taxYear>
+        <quarter>2</quarter>
+        <monthNumber>10</monthNumber>
+        <taxGroup>IV</taxGroup>
+        <activity>Programmer</activity>
+        <income>10000</income>
+    </report>

@@ -17,29 +17,28 @@ public class SecurityFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) {
-        requestMatchers = new ArrayList<>();
+        requestMatchers = new ArrayList<>(30);
 
         requestMatchers.add(new RequestMatcher("/inspector/homePage.jsp", UserRole.INSPECTOR));
         requestMatchers.add(new RequestMatcher("/inspector/clients.jsp", UserRole.INSPECTOR));
         requestMatchers.add(new RequestMatcher("/inspector/reports.jsp", UserRole.INSPECTOR));
         requestMatchers.add(new RequestMatcher("/inspector/clientReports.jsp", UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/searchClients", UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/allClients", UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/allReports", UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/filterAllReports", UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/client", UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/client/search", UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/report", UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/report/filter", UserRole.INSPECTOR));
 
         requestMatchers.add(new RequestMatcher("/client/edit.jsp", UserRole.CLIENT));
         requestMatchers.add(new RequestMatcher("/client/reports.jsp", UserRole.CLIENT));
         requestMatchers.add(new RequestMatcher("/client/homePage.jsp", UserRole.CLIENT));
-        requestMatchers.add(new RequestMatcher("/service/upload", UserRole.CLIENT));
-        requestMatchers.add(new RequestMatcher("/service/editReport", UserRole.CLIENT));
+        requestMatchers.add(new RequestMatcher("/service/report/edit", UserRole.CLIENT));
+        requestMatchers.add(new RequestMatcher("/service/report/upload", UserRole.CLIENT));
 
         requestMatchers.add(new RequestMatcher("/user/report.jsp", UserRole.CLIENT, UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/toHome", UserRole.CLIENT, UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/allReportsByClient", UserRole.CLIENT, UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/filterClientReports", UserRole.CLIENT, UserRole.INSPECTOR));
-        requestMatchers.add(new RequestMatcher("/service/showReport", UserRole.CLIENT, UserRole.INSPECTOR));
-
+        requestMatchers.add(new RequestMatcher("/service/report/client", UserRole.CLIENT, UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/report/client/filter", UserRole.CLIENT, UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/report/data", UserRole.CLIENT, UserRole.INSPECTOR));
+        requestMatchers.add(new RequestMatcher("/service/home", UserRole.CLIENT, UserRole.INSPECTOR));
     }
 
     @Override

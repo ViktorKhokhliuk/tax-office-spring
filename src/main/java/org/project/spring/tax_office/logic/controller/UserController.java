@@ -3,7 +3,7 @@ package org.project.spring.tax_office.logic.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.project.spring.tax_office.infra.web.QueryParameterResolver;
-import org.project.spring.tax_office.logic.entity.dto.UserLoginDto;
+import org.project.spring.tax_office.logic.entity.dto.UserAuthorizationDto;
 import org.project.spring.tax_office.logic.entity.user.User;
 import org.project.spring.tax_office.logic.entity.user.UserRole;
 import org.project.spring.tax_office.logic.service.UserService;
@@ -29,8 +29,8 @@ public class UserController {
 
     @PostMapping("/login")
     public RedirectView login(HttpServletRequest request) {
-        UserLoginDto userLoginDto = queryParameterResolver.getObject(request, UserLoginDto.class);
-        User registeredUser = userService.getUserByLogin(userLoginDto);
+        UserAuthorizationDto userAuthorizationDto = queryParameterResolver.getObject(request, UserAuthorizationDto.class);
+        User registeredUser = userService.getUserByLogin(userAuthorizationDto);
         HttpSession session = request.getSession(true);
         session.setAttribute("user", registeredUser);
         return new RedirectView(CONTEXT_PATH + userHomePageViews.get(registeredUser.getUserRole()));

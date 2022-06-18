@@ -1,7 +1,9 @@
 package org.project.spring.tax_office.logic.entity.user;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class Client extends User {
 

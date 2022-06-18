@@ -6,7 +6,6 @@ import org.project.spring.tax_office.logic.entity.dto.ClientReportFilterDto;
 import org.project.spring.tax_office.logic.entity.dto.ReportDeleteDto;
 import org.project.spring.tax_office.logic.entity.dto.ReportFilterDto;
 import org.project.spring.tax_office.logic.entity.dto.ReportUpdateDto;
-import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.project.spring.tax_office.logic.entity.user.User;
 import org.project.spring.tax_office.logic.entity.user.UserRole;
 import org.project.spring.tax_office.logic.service.ClientService;
@@ -19,6 +18,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/report")
@@ -34,7 +34,7 @@ public class ReportController {
     public ModelAndView getAll(@RequestParam("page") int page) {
         ModelAndView modelAndView = new ModelAndView("/inspector/reports.jsp");
         modelAndView.addObject("reports", reportService.getAllReports(page));
-        modelAndView.addObject("clients", clientService.getAllClientsNoLimit());
+        modelAndView.addObject("clients", clientService.getAllClientsNoLimitMap());
         modelAndView.addObject("countOfPages", reportService.getCountOfPagesForAll());
         modelAndView.addObject("page", page);
         return modelAndView;
@@ -45,7 +45,7 @@ public class ReportController {
         ReportFilterDto dto = queryParameterResolver.getObject(request, ReportFilterDto.class);
         ModelAndView modelAndView = new ModelAndView("/inspector/reports.jsp");
         modelAndView.addObject("reports", reportService.getAllReportsByFilter(dto));
-        modelAndView.addObject("clients", clientService.getAllClientsNoLimit());
+        modelAndView.addObject("clients", clientService.getAllClientsNoLimitMap());
         modelAndView.addObject("countOfPages", reportService.getCountOfPagesForAllReportsByFilter(dto));
         modelAndView.addObject("page", dto.getPage());
         modelAndView.addObject("dto", dto);
@@ -57,7 +57,7 @@ public class ReportController {
         User user = (User) request.getSession(false).getAttribute("user");
         int page = Integer.parseInt(request.getParameter("page"));
         Long clientId = Long.valueOf(request.getParameter("clientId"));
-        String clientFullName = request.getParameter("clientFullName");
+        String clientFullName = Optional.ofNullable(request.getParameter("clientFullName")).orElse("");
         ModelAndView modelAndView = new ModelAndView(clientReportsViews.get(user.getUserRole()));
         modelAndView.addObject("reports", reportService.getClientReports(clientId, page));
         modelAndView.addObject("countOfPages", reportService.getCountOfPagesForClientReports(clientId));
@@ -79,30 +79,6 @@ public class ReportController {
         modelAndView.addObject("page", dto.getPage());
         modelAndView.addObject("dto", dto);
         return modelAndView;
-    }
-
-    @GetMapping("/data")
-    public ModelAndView getReportData(@RequestParam("id") Long reportId) {
-        ModelAndView modelAndView = new ModelAndView("/user/report.jsp");
-        modelAndView.addObject("reportData", reportService.getReportData(reportId));
-        return modelAndView;
-    }
-
-    @GetMapping("/edit")
-    public ModelAndView getReportDataForEdit(@RequestParam("id") Long reportId, @ModelAttribute("message") String message) {
-        ModelAndView modelAndView = new ModelAndView("/client/edit.jsp");
-        modelAndView.addObject("reportData", reportService.getReportData(reportId));
-        modelAndView.addObject("message", message);
-        return modelAndView;
-    }
-
-    @PostMapping("/edit")
-    public RedirectView editReportData(HttpServletRequest request, RedirectAttributes redirectAttributes) {
-        ReportData editedReportData = queryParameterResolver.getObject(request, ReportData.class);
-        reportService.editReportData(editedReportData);
-        redirectAttributes.addAttribute("id", editedReportData.getId());
-        redirectAttributes.addFlashAttribute("message", "Report has been edited successfully!");
-        return new RedirectView("/tax-office/service/report/edit");
     }
 
     @PostMapping("/update")

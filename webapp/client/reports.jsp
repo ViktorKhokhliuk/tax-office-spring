@@ -17,9 +17,6 @@
 	.logout {
       margin-right:10px;
     }
-    .page {
-
-    }
     .reports {
     margin-left:150px;
     }
@@ -117,10 +114,17 @@
                             <td><c:out value="${report.status}" /></td>
                             <td><c:out value="${report.info}" /></td>
 							<td>
-							   <form action="/tax-office/service/report/edit" method="GET" target="_blank">
-                                  <input type="hidden" name="id" value="${report.id}"/>
-                                  <button type="submit" class="btn btn-outline-primary" ><lan:print message="edit"/></button>
-                               </form>
+							   <c:choose>
+							      <c:when test="${report.status ne 'ACCEPTED'}">
+							        <form action="/tax-office/service/report/data/edit" method="GET" target="_blank">
+                                     <input type="hidden" name="id" value="${report.id}"/>
+                                      <button type="submit" class="btn btn-outline-primary" ><lan:print message="edit"/></button>
+                                    </form>
+                                  </c:when>
+                                  <c:otherwise>
+                                    <p style="color:blue"><lan:print message="can_not_edit"/></p>
+                                  </c:otherwise>
+                               </c:choose>
 							   <form action="/tax-office/service/report/delete" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
                                   <input type="hidden" name="id" value="${report.id}"/>
                                   <input type="hidden" name="page" value="${page}"/>
@@ -135,11 +139,10 @@
 					</c:forEach>
 				</tbody>
 			</table>
-			<br>
 	</div>
 	<c:if test = "${countOfPages != 0}">
        <c:forEach var = "i" begin = "1" end = "${countOfPages}">
-       <form action = "/tax-office/service/report/client/filter"  method="GET" class = page style="float:left">
+       <form action = "/tax-office/service/report/client/filter" method="GET" style="float:left">
            <input type="hidden" name="clientId" value="${user.id}"/><br><br>
            <input type="hidden" name="page" value="${i}"/>
            <input type="hidden" name="date" value="${dto.date}"/>

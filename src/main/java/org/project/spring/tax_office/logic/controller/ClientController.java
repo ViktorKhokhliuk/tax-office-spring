@@ -34,7 +34,7 @@ public class ClientController {
     }
 
     @GetMapping("/login")
-    public ModelAndView redirectToLogin(@ModelAttribute("message") String message) {
+    public ModelAndView redirectToSignIn(@ModelAttribute("message") String message) {
         ModelAndView modelAndView = new ModelAndView("/index.jsp");
         modelAndView.addObject("message", message);
         return modelAndView;
