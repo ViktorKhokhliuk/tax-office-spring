@@ -52,10 +52,17 @@ public class ClientController {
     @PostMapping("/delete")
     public RedirectView delete(@RequestParam("id") Long id,
                                @RequestParam("page") int page,
+                               @RequestParam("name") String name,
+                               @RequestParam("surname") String surname,
+                               @RequestParam("tin") String tin,
                                RedirectAttributes attributes) {
+
         clientService.deleteById(id);
         attributes.addAttribute("page", page);
-        return new RedirectView("/tax-office/service/client");
+        attributes.addAttribute("name", name);
+        attributes.addAttribute("surname", surname);
+        attributes.addAttribute("tin", tin);
+        return new RedirectView("/tax-office/service/client/search");
     }
 
     @GetMapping("/search")

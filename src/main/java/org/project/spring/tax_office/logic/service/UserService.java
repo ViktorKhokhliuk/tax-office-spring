@@ -3,7 +3,7 @@ package org.project.spring.tax_office.logic.service;
 import lombok.RequiredArgsConstructor;
 import org.project.spring.tax_office.logic.entity.dto.UserAuthorizationDto;
 import org.project.spring.tax_office.logic.entity.user.User;
-import org.project.spring.tax_office.logic.exception.UserException;
+import org.project.spring.tax_office.infra.web.exception.UserException;
 import org.project.spring.tax_office.logic.repository.UserRepository;
 import org.springframework.stereotype.Service;
 

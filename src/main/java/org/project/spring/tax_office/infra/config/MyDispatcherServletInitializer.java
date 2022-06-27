@@ -1,6 +1,7 @@
-package org.project.spring.tax_office.infra.web;
+package org.project.spring.tax_office.infra.config;
 
-import org.project.spring.tax_office.Application;
+import org.project.spring.tax_office.infra.config.app.AppConfig;
+import org.project.spring.tax_office.infra.web.listener.LocaleSessionListener;
 import org.project.spring.tax_office.infra.web.encoding.EncodingFilter;
 import org.project.spring.tax_office.infra.web.security.SecurityFilter;
 import org.springframework.web.WebApplicationInitializer;
@@ -19,7 +20,7 @@ public class MyDispatcherServletInitializer implements WebApplicationInitializer
     @Override
     public void onStartup(ServletContext servletContext) {
         AnnotationConfigWebApplicationContext root = new AnnotationConfigWebApplicationContext();
-        root.register(Application.class);
+        root.register(AppConfig.class);
 
         servletContext.addListener(new ContextLoaderListener(root));
         servletContext.addListener(buildLocaleSessionListener());
@@ -45,22 +46,6 @@ public class MyDispatcherServletInitializer implements WebApplicationInitializer
         return new LocaleSessionListener(locales, selectedLocale);
     }
 }
-//    public class MyDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-//
-//    @Override
-//    protected Class<?>[] getRootConfigClasses() {
-//        return new Class[0];
-//    }
-//
-//    @Override
-//    protected Class<?>[] getServletConfigClasses() {
-//        return new Class[0];
-//    }
-//
-//    @Override
-//    protected String[] getServletMappings() {
-//        return new String[0];
-//    }
-//}
+
 
 

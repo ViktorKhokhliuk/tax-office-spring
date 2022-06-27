@@ -3,7 +3,7 @@ package org.project.spring.tax_office.logic.parser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
-import org.project.spring.tax_office.logic.exception.ReportException;
+import org.project.spring.tax_office.infra.web.exception.ReportException;
 
 import java.io.File;
 

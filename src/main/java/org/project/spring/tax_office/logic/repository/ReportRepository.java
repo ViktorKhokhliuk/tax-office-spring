@@ -10,7 +10,7 @@ import org.project.spring.tax_office.logic.entity.report.Report;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.project.spring.tax_office.logic.entity.report.ReportInfo;
 import org.project.spring.tax_office.logic.entity.report.ReportStatus;
-import org.project.spring.tax_office.logic.exception.ReportException;
+import org.project.spring.tax_office.infra.web.exception.ReportException;
 import org.project.spring.tax_office.logic.repository.rowmapper.ReportRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -106,6 +106,7 @@ public class ReportRepository {
             });
         } catch (Exception e) {
             log.error(e.getMessage());
+            log.info("report didn't insert");
             throw new ReportException("invalid file");
         }
 

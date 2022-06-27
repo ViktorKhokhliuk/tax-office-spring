@@ -5,7 +5,7 @@ import lombok.extern.log4j.Log4j2;
 import org.apache.commons.io.FileUtils;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
 import org.project.spring.tax_office.logic.entity.report.ReportTags;
-import org.project.spring.tax_office.logic.exception.ReportException;
+import org.project.spring.tax_office.infra.web.exception.ReportException;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

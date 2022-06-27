@@ -57,7 +57,7 @@ pageEncoding="UTF-8" isELIgnored="false" %>
      <button type="submit" class="btn btn-primary"><lan:print message="sign_in"/></button>
      </form>
      <p>
-     <form action = "user/registration.jsp">
+     <form method="GET" action="/tax-office/service/registration">
      <button type="submit" class="btn btn-primary"><lan:print message="registration"/></button>
      </form>
     </div>

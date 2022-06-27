@@ -9,7 +9,7 @@ import org.project.spring.tax_office.logic.entity.dto.UserAuthorizationDto;
 import org.project.spring.tax_office.logic.entity.user.Client;
 import org.project.spring.tax_office.logic.entity.user.Inspector;
 import org.project.spring.tax_office.logic.entity.user.User;
-import org.project.spring.tax_office.logic.exception.UserException;
+import org.project.spring.tax_office.infra.web.exception.UserException;
 import org.project.spring.tax_office.logic.repository.UserRepository;
 
 import java.util.Optional;

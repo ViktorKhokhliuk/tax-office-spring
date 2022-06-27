@@ -2,7 +2,7 @@ package org.project.spring.tax_office.logic.service;
 
 import lombok.RequiredArgsConstructor;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
-import org.project.spring.tax_office.logic.exception.ReportException;
+import org.project.spring.tax_office.infra.web.exception.ReportException;
 import org.project.spring.tax_office.logic.repository.ReportDataRepository;
 import org.springframework.stereotype.Service;
 

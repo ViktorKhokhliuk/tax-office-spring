@@ -1,4 +1,4 @@
-package org.project.spring.tax_office.logic.exception;
+package org.project.spring.tax_office.infra.web.exception;
 
 import org.project.spring.tax_office.infra.web.exception.TaxOfficeException;
 

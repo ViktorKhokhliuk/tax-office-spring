@@ -12,9 +12,7 @@ import java.util.Map;
 @Component
 @RequiredArgsConstructor
 public class QueryParameterResolver {
-
     private final ObjectMapper objectMapper;
-
     public <T> T getObject(HttpServletRequest req, Class<T> aClass) {
         Map<String, String> parameters = new HashMap<>();
         Enumeration<String> parameterNames = req.getParameterNames();

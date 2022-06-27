@@ -85,9 +85,9 @@ public class ClientControllerTest {
 
         when(clientService.deleteById(clientId)).thenReturn(anyInt());
 
-        RedirectView redirectView = clientController.delete(clientId, page, redirectAttributes);
+        RedirectView redirectView = clientController.delete(clientId, page, "name", "surname", "tin", redirectAttributes);
         assertNotNull(redirectView);
-        assertEquals("/tax-office/service/client",redirectView.getUrl());
+        assertEquals("/tax-office/service/client/search",redirectView.getUrl());
 
         verify(clientService).deleteById(clientId);
     }

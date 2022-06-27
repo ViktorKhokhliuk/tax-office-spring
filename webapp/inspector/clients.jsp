@@ -104,6 +104,9 @@
 							   <form action="/tax-office/service/client/delete" method="POST" onSubmit='return confirm("<lan:print message="are_you_sure"/>");'>
                                  <input type="hidden" name="id" value="${client.id}"/>
                                  <input type="hidden" name="page" value="${page}">
+                                 <input type="hidden" name="name" value="${name}"/>
+                                 <input type="hidden" name="surname" value="${surname}"/>
+                                 <input type="hidden" name="tin" value="${tin}"/>
                                  <button type="submit" class="btn btn-outline-danger"><lan:print message="delete"/></button>
                                </form>
 							</td>

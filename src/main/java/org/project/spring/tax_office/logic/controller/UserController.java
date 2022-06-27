@@ -61,4 +61,9 @@ public class UserController {
         User user = (User) request.getSession(false).getAttribute("user");
         return new ModelAndView(userHomePageViews.get(user.getUserRole()));
     }
+
+    @GetMapping("/registration")
+    public ModelAndView registration() {
+        return new ModelAndView("/user/registration.jsp");
+    }
 }

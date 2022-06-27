@@ -5,7 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.project.spring.tax_office.logic.entity.dto.ReportCreateDto;
 import org.project.spring.tax_office.logic.entity.report.Report;
 import org.project.spring.tax_office.logic.entity.report.ReportData;
-import org.project.spring.tax_office.logic.exception.ReportException;
+import org.project.spring.tax_office.infra.web.exception.ReportException;
 import org.project.spring.tax_office.logic.parser.Parser;
 import org.project.spring.tax_office.logic.repository.ReportRepository;
 import org.springframework.stereotype.Service;

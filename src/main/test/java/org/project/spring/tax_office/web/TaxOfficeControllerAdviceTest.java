@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.project.spring.tax_office.infra.web.exception.TaxOfficeControllerAdvice;
-import org.project.spring.tax_office.logic.exception.ReportException;
+import org.project.spring.tax_office.infra.web.exception.ReportException;
 import org.springframework.web.servlet.ModelAndView;
 
 import static org.junit.Assert.assertEquals;

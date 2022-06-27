@@ -5,8 +5,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.File;
-@Configuration
-@ComponentScan("org.project.spring.tax_office")
+//@Configuration
+//@ComponentScan("org.project.spring.tax_office")
 public class Application {
 
     public static void main(String[] args) throws LifecycleException {
