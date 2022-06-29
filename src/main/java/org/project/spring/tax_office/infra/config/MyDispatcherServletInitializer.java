@@ -11,9 +11,6 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 import javax.servlet.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 public class MyDispatcherServletInitializer implements WebApplicationInitializer {
 
@@ -23,7 +20,7 @@ public class MyDispatcherServletInitializer implements WebApplicationInitializer
         root.register(AppConfig.class);
 
         servletContext.addListener(new ContextLoaderListener(root));
-        servletContext.addListener(buildLocaleSessionListener());
+        servletContext.addListener(new LocaleSessionListener());
 
         FilterRegistration.Dynamic auth = servletContext.addFilter("security", new SecurityFilter());
         auth.addMappingForUrlPatterns(null, false, "/*");
@@ -36,14 +33,6 @@ public class MyDispatcherServletInitializer implements WebApplicationInitializer
 
         registration.setLoadOnStartup(1);
         registration.addMapping("/service/*");
-    }
-
-    private LocaleSessionListener buildLocaleSessionListener() {
-        List<Locale> locales = new ArrayList<>();
-        Locale selectedLocale = new Locale("en");
-        locales.add(selectedLocale);
-        locales.add(new Locale("ru"));
-        return new LocaleSessionListener(locales, selectedLocale);
     }
 }
 

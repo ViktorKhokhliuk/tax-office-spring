@@ -33,7 +33,7 @@
   <h1><lan:print message="registration_form"/>:</h1>
   <div class="card">
    <div class="card-body">
-    <form action="/tax-office/service/client" method="POST">
+    <form action="/tax-office/service/client/registration" method="POST">
 
      <div class="form-group row">
       <label for="name" class="col-sm-2 col-form-label"><lan:print message="name"/></label>

@@ -15,8 +15,7 @@ import java.util.Locale;
 @RequiredArgsConstructor
 public class LocaleSessionListener implements HttpSessionListener {
 
-    private final List<Locale> locales;
-    private final Locale selectedLocale;
+    private final List<Locale> locales = List.of(new Locale("en"), new Locale("ru"));
 
     @Override
     public void sessionCreated(HttpSessionEvent httpSessionEvent) {
@@ -24,8 +23,8 @@ public class LocaleSessionListener implements HttpSessionListener {
         log.info("Session created");
         session.setAttribute("locales", locales);
         log.info("Set session locales --> " + locales);
-        session.setAttribute("selectedLocale", selectedLocale);
-        log.info("Set session selected locale --> " + selectedLocale);
+        session.setAttribute("selectedLocale", locales.get(0));
+        log.info("Set session selected locale --> " + locales.get(0));
     }
 
     @Override

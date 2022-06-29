@@ -4717,3 +4717,86 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2022-06-26 21:42:10,478 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3917 ms
 2022-06-26 21:42:10,518 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
 2022-06-26 21:42:10,526 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-06-27 18:47:48,909 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 18:47:50,057 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@712e49ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@538a1adf, org.springframework.security.web.context.SecurityContextPersistenceFilter@51c4bfea, org.springframework.security.web.header.HeaderWriterFilter@1d0868dc, org.springframework.security.web.authentication.logout.LogoutFilter@3829bb5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a35f9fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56101f06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a931ba9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@691396a0, org.springframework.security.web.session.SessionManagementFilter@1e1424e9, org.springframework.security.web.access.ExceptionTranslationFilter@f829512, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79e464a]
+2022-06-27 18:47:50,857 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 1948 ms
+2022-06-27 18:47:50,873 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 18:47:50,889 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-27 18:48:11,082 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-27 18:48:11,082 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-27 18:48:11,082 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-27 18:59:46,238 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 18:59:47,415 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34f3448a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e7bed1, org.springframework.security.web.context.SecurityContextPersistenceFilter@51971d32, org.springframework.security.web.header.HeaderWriterFilter@533e74c5, org.springframework.security.web.authentication.logout.LogoutFilter@4033d25d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68194ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d1c7e7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b968647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75adbfae, org.springframework.security.web.session.SessionManagementFilter@3504fbfe, org.springframework.security.web.access.ExceptionTranslationFilter@627b9f03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7de47f81]
+2022-06-27 18:59:48,319 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 2081 ms
+2022-06-27 18:59:48,335 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 18:59:48,335 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-27 18:59:53,269 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-27 18:59:53,270 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-27 18:59:53,270 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-27 19:02:57,179 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 19:02:58,346 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34f3448a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e7bed1, org.springframework.security.web.context.SecurityContextPersistenceFilter@51971d32, org.springframework.security.web.header.HeaderWriterFilter@533e74c5, org.springframework.security.web.authentication.logout.LogoutFilter@4033d25d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68194ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d1c7e7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b968647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75adbfae, org.springframework.security.web.session.SessionManagementFilter@3504fbfe, org.springframework.security.web.access.ExceptionTranslationFilter@627b9f03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7de47f81]
+2022-06-27 19:02:59,283 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 2104 ms
+2022-06-27 19:02:59,288 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 19:02:59,304 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 16 ms
+2022-06-27 19:03:08,226 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-27 19:03:08,226 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-27 19:03:08,226 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-27 19:05:20,653 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 19:05:25,118 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34f3448a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e7bed1, org.springframework.security.web.context.SecurityContextPersistenceFilter@51971d32, org.springframework.security.web.header.HeaderWriterFilter@35390561, org.springframework.security.web.authentication.logout.LogoutFilter@4033d25d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68194ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d1c7e7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b968647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75adbfae, org.springframework.security.web.session.SessionManagementFilter@3504fbfe, org.springframework.security.web.access.ExceptionTranslationFilter@479875b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7de47f81]
+2022-06-27 19:05:26,060 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 5407 ms
+2022-06-27 19:05:26,076 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 19:05:26,091 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-27 19:06:03,911 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 19:06:05,092 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34f3448a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e7bed1, org.springframework.security.web.context.SecurityContextPersistenceFilter@51971d32, org.springframework.security.web.header.HeaderWriterFilter@533e74c5, org.springframework.security.web.authentication.logout.LogoutFilter@4033d25d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68194ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d1c7e7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b968647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75adbfae, org.springframework.security.web.session.SessionManagementFilter@3504fbfe, org.springframework.security.web.access.ExceptionTranslationFilter@627b9f03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7de47f81]
+2022-06-27 19:06:06,092 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 2181 ms
+2022-06-27 19:06:06,115 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 19:06:06,121 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 6 ms
+2022-06-27 19:06:06,225 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-27 19:06:06,225 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-27 19:06:06,225 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-27 19:09:11,518 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 19:09:12,648 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34f3448a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e7bed1, org.springframework.security.web.context.SecurityContextPersistenceFilter@51971d32, org.springframework.security.web.header.HeaderWriterFilter@533e74c5, org.springframework.security.web.authentication.logout.LogoutFilter@4033d25d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68194ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d1c7e7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b968647, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75adbfae, org.springframework.security.web.session.SessionManagementFilter@3504fbfe, org.springframework.security.web.access.ExceptionTranslationFilter@627b9f03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7de47f81]
+2022-06-27 19:09:13,605 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 2086 ms
+2022-06-27 19:09:13,620 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 19:09:13,620 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 0 ms
+2022-06-27 19:09:17,328 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-27 19:09:17,328 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-27 19:09:17,328 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-27 19:09:20,700 WARN o.s.w.s.PageNotFound [http-nio-8080-exec-3] No mapping for POST /tax-office/service/login
+2022-06-27 20:16:35,532 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 20:16:38,900 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 3352 ms
+2022-06-27 20:16:38,932 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 20:16:38,947 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 15 ms
+2022-06-27 20:27:35,392 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-27 20:27:39,567 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4165 ms
+2022-06-27 20:27:39,609 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-27 20:27:39,617 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-06-27 20:27:45,002 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-27 20:27:45,002 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-27 20:27:45,002 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-27 20:27:50,963 INFO o.p.s.t.l.c.UserController [http-nio-8080-exec-2] Set session selected locale --> ru
+2022-06-27 20:27:52,697 INFO o.p.s.t.l.c.UserController [http-nio-8080-exec-4] Set session selected locale --> en
+2022-06-27 20:27:55,615 INFO o.p.s.t.l.c.UserController [http-nio-8080-exec-6] Set session selected locale --> ru
+2022-06-29 13:45:59,479 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-29 13:46:03,676 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4172 ms
+2022-06-29 13:46:03,724 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-29 13:46:03,733 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 8 ms
+2022-06-29 13:46:11,553 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Session created
+2022-06-29 13:46:11,555 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session locales --> [en, ru]
+2022-06-29 13:46:11,555 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-1] Set session selected locale --> en
+2022-06-29 13:48:01,974 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-5] Session created
+2022-06-29 13:48:01,974 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-5] Set session locales --> [en, ru]
+2022-06-29 13:48:01,974 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-5] Set session selected locale --> en
+2022-06-29 13:49:42,334 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization started
+2022-06-29 13:49:46,755 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext initialized in 4394 ms
+2022-06-29 13:49:46,810 INFO o.s.w.s.DispatcherServlet [main] Initializing Servlet 'dispatcher'
+2022-06-29 13:49:46,817 INFO o.s.w.s.DispatcherServlet [main] Completed initialization in 7 ms
+2022-06-29 13:49:51,922 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Session created
+2022-06-29 13:49:51,924 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Set session locales --> [en, ru]
+2022-06-29 13:49:51,924 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-2] Set session selected locale --> en
+2022-06-29 13:50:01,400 INFO o.p.s.t.l.c.ClientController [http-nio-8080-exec-1] Client: mykola mykola has been registered successfully!
+2022-06-29 13:51:03,499 INFO o.p.s.t.l.c.ClientController [http-nio-8080-exec-6] Client: boba boba has been registered successfully!
+2022-06-29 13:51:39,092 INFO o.p.s.t.l.c.UserController [http-nio-8080-exec-4] Set session selected locale --> ru
+2022-06-29 13:51:44,227 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-9] Session created
+2022-06-29 13:51:44,227 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-9] Set session locales --> [en, ru]
+2022-06-29 13:51:44,227 INFO o.p.s.t.i.w.l.LocaleSessionListener [http-nio-8080-exec-9] Set session selected locale --> en

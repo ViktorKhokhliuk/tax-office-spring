@@ -33,7 +33,6 @@
     <log4j.version>2.17.1</log4j.version>
     <mockito.version>4.4.0</mockito.version>
     <junit.version>4.13.2</junit.version>
-    <spring-security.version>5.7.2</spring-security.version>
   </properties>
 
   <dependencies>
@@ -71,24 +70,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>${spring.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-core</artifactId>
-      <version>${spring-security.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-web</artifactId>
-      <version>${spring-security.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-config</artifactId>
-      <version>${spring-security.version}</version>
     </dependency>
 
     <dependency>

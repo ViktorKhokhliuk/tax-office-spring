@@ -24,7 +24,7 @@ public class ClientController {
     private final QueryParameterResolver queryParameterResolver;
     private final ClientService clientService;
 
-    @PostMapping()
+    @PostMapping("/registration")
     public RedirectView registration(HttpServletRequest request, RedirectAttributes redirectAttributes) {
         ClientRegistrationDto clientRegistrationDto = queryParameterResolver.getObject(request, ClientRegistrationDto.class);
         Client registeredClient = clientService.registration(clientRegistrationDto);
